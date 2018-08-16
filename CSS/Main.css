@@ -67,6 +67,11 @@ h1{
     font-family: 'Inter UI';
 }
 
+.grid-container{
+    width: 100%;
+    padding: 25vh 0;
+}
+
 .herotext{
     font-family: 'Inter UI';
     font-size: 32px;
