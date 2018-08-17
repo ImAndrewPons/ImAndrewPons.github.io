@@ -60,27 +60,73 @@
   
 
 
+.headerBar{
+    padding: 3vw 3vw 0 3vw;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr;
+}
 
+.myName{
+    grid-row: 1;
+    grid-column: 1 / 2;
+}
+
+.menuButton{
+    grid-row: 1;
+    grid-column: 2 / 3;
+    width: 24px;
+    height: 24px;
+    justify-self: right;
+}
+
+.burgerBars{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 auto;
+    
+}
+
+.burgerTop{
+
+}
+
+.burgerMiddle{
+ margin: 6px auto;
+}
+
+.burgerBottom{
+
+}
 
 
 h1{
+    
     font-family: 'Inter UI';
+    font-weight: 300;
+    font-size: 2vh;
+    margin: 0;
+    padding: 0;
+
 }
 
-.grid-container{
+.gridContainer{
     width: 100%;
-    padding: 25vh 0;
+    padding: 15vh 0;
 }
 
-.herotext{
+
+.heroContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.heroText{
     font-family: 'Inter UI';
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 4.5vh;
+    line-height: 125%;
     font-style:  normal;
     font-weight: 700;
-}
-
-.herocontainer{
-    width: 60%;
-    margin: 0 auto;
 }
