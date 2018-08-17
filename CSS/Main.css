@@ -101,6 +101,16 @@
 
 }
 
+.projectLink{
+    color: #343A40;
+    transition: all 0.1s;
+}
+
+.projectLink:hover{
+    color: #868E96;
+    transition: all 0.1s;
+}
+
 
 h1{
     
@@ -129,4 +139,5 @@ h1{
     line-height: 125%;
     font-style:  normal;
     font-weight: 700;
+    color: #343A40;
 }
