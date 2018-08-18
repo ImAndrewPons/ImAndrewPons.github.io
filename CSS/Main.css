@@ -479,7 +479,7 @@ transition: all 0.1s;
 
 
 
-/* Extra large devices (large laptops and desktops, 1921px and up) 
+/* Extra large devices (large laptops and desktops, 1921px and up) */
 @media only screen and (min-width: 1921px) {
 
     .masterGrid{
@@ -538,4 +538,3 @@ transition: all 0.1s;
     }
 
 }
-*/
