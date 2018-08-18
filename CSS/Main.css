@@ -4,6 +4,11 @@
     --gray: #868E96;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 
 @font-face {
     font-family: 'Inter UI';
@@ -183,6 +188,39 @@ transition: all 0.1s;
         width: 80%;
     }
 
+    .nav-row{
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+        background-color: none;
+    }
+
+   .nav-container{
+       width: 80%;
+       margin: 0 auto;
+       
+   }
+
+
+    .navLink{
+        font-family: 'Inter UI';
+        font-size: 3vh; 
+        line-height: 100%;
+        font-style:  normal;
+        font-weight: 300;
+        text-decoration: none;
+        color: var(--gray);
+        background-color: white;
+        padding: 3vh 3vh 3vh 0;
+        text-align: left;
+        display: inline-block;
+    }
+
+    .navLink:hover{
+        color: var(--black);
+        
+    }
+
     h2{
         font-family: 'Inter UI';
         font-size: 2.75vh;
@@ -208,11 +246,7 @@ transition: all 0.1s;
     }
 
 
-    .socialContainer{
-        grid-row: 4;
-        grid-column: 1 / 7; 
 
-    }
 
     .socialContainer{
         grid-row: 4;
@@ -229,6 +263,40 @@ transition: all 0.1s;
         font-weight: 300;
         margin-right:15px;
     }
+
+
+    .work-container{
+        width:80%;
+        margin: 25vh auto;
+        
+        
+    }
+
+        
+    .work-image{
+       
+       display: block;
+       margin: 15vh auto;
+       max-width: 100%;
+    }
+
+    .work-text{
+       
+        margin: 15vh auto;
+        max-width: 100%;
+        text-align: left;
+        font-family: 'Inter UI';
+        font-size: 2vh;
+        line-height: 145%;
+        font-style:  normal;
+        font-weight: 300;
+        color: var(--gray);
+     }
+
+     .work-text h4 {
+         color: var(--black);
+         margin-bottom: 3vh;
+     }
 } 
 
 
@@ -244,6 +312,38 @@ transition: all 0.1s;
         grid-template-columns: 6;
         margin: 0 auto;
         width: 80%;
+    }
+
+    .nav-row{
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+
+    }
+
+   .nav-container{
+       width: 80%;
+       margin: 0 auto;
+   }
+
+
+   .navLink{
+    font-family: 'Inter UI';
+    font-size: 3vh; 
+    line-height: 145%;
+    font-style:  normal;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--gray);
+    background-color: white;
+    border: none;
+    padding: 4vh 4vh 4vh 0;
+    text-align: left;
+    display: inline-block;
+}
+
+    .navLink:hover{
+        color: var(--black);
     }
 
     h2{
@@ -271,11 +371,6 @@ transition: all 0.1s;
     }
 
 
-    .socialContainer{
-        grid-row: 4;
-        grid-column: 1 / 7; 
-
-    }
 
     .socialContainer{
         grid-row: 4;
@@ -293,6 +388,39 @@ transition: all 0.1s;
         margin-right:15px;
     }
 
+    .work-container{
+        width:80%;
+        margin: 25vh auto;
+        
+        
+    }
+
+        
+    .work-image{
+       
+       display: block;
+       margin: 15vh auto;
+       max-width: 100%;
+    }
+
+    .work-text{
+       
+        margin: 15vh auto;
+        max-width: 100%;
+        text-align: left;
+        font-family: 'Inter UI';
+        font-size: 2vh;
+        line-height: 145%;
+        font-style:  normal;
+        font-weight: 300;
+        color: var(--gray);
+     }
+
+     .work-text h4 {
+         color: var(--black);
+         margin-bottom: 3vh;
+     }
+
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -304,6 +432,38 @@ transition: all 0.1s;
         grid-template-columns: 6;
         margin: 0 auto;
         width: 80%;
+    }
+
+    .nav-row{
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+      
+    }
+
+   .nav-container{
+       width: 80%;
+       margin: 0 auto;
+   }
+
+
+   .navLink{
+    font-family: 'Inter UI';
+    font-size: 3vh; 
+    line-height: 145%;
+    font-style:  normal;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--gray);
+    background-color: white;
+    border: none;
+    padding: 4vh 4vh 4vh 0;
+    text-align: left;
+    display: inline-block;
+}
+
+    .navLink:hover{
+        color: var(--black);
     }
 
     h2{
@@ -331,11 +491,7 @@ transition: all 0.1s;
     }
 
 
-    .socialContainer{
-        grid-row: 4;
-        grid-column: 1 / 7; 
 
-    }
 
     .socialContainer{
         grid-row: 4;
@@ -353,6 +509,39 @@ transition: all 0.1s;
         margin-right:15px;
     }
 
+    .work-container{
+        width:80%;
+        margin: 25vh auto;
+        
+        
+    }
+
+        
+    .work-image{
+       
+       display: block;
+       margin: 15vh auto;
+       max-width: 100%;
+    }
+
+    .work-text{
+       
+        margin: 15vh auto;
+        max-width: 80%;
+        text-align: left;
+        font-family: 'Inter UI';
+        font-size: 2vh;
+        line-height: 145%;
+        font-style:  normal;
+        font-weight: 300;
+        color: var(--gray);
+     }
+
+     .work-text h4 {
+         color: var(--black);
+         margin-bottom: 3vh;
+     }
+
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -364,6 +553,37 @@ transition: all 0.1s;
         grid-template-columns: 6;
         margin: 0 auto;
         width: 75%;
+    }
+
+    .nav-row{
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+    }
+
+   .nav-container{
+       width: 75%;
+       margin: 0 auto;
+   }
+
+
+   .navLink{
+    font-family: 'Inter UI';
+    font-size: 3vh; 
+    line-height: 145%;
+    font-style:  normal;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--gray);
+    background-color: white;
+    border: none;
+    padding: 4vh 4vh 4vh 0;
+    text-align: left;
+    display: inline-block;
+}
+
+    .navLink:hover{
+        color: var(--black);
     }
 
     h2{
@@ -391,11 +611,6 @@ transition: all 0.1s;
     }
 
 
-    .socialContainer{
-        grid-row: 4;
-        grid-column: 1 / 7; 
-
-    }
 
     .socialContainer{
         grid-row: 4;
@@ -413,6 +628,39 @@ transition: all 0.1s;
         margin-right:15px;
     }
 
+    .work-container{
+        width:75%;
+        margin: 25vh auto;
+        
+        
+    }
+
+        
+    .work-image{
+       
+       display: block;
+       margin: 15vh auto;
+       max-width: 100%;
+    }
+
+    .work-text{
+       
+        margin: 15vh auto;
+        max-width: 70%;
+        text-align: left;
+        font-family: 'Inter UI';
+        font-size: 2vh;
+        line-height: 145%;
+        font-style:  normal;
+        font-weight: 300;
+        color: var(--gray);
+     }
+
+     .work-text h4 {
+         color: var(--black);
+         margin-bottom: 3vh;
+     }
+
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -425,6 +673,41 @@ transition: all 0.1s;
         margin: 0 auto;
         width: 70%;
     }
+
+
+    .nav-row{
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+       
+    }
+
+   .nav-container{
+       width: 70%;
+       margin: 0 auto;
+   }
+
+
+   .navLink{
+    font-family: 'Inter UI';
+    font-size: 3vh; 
+    line-height: 145%;
+    font-style:  normal;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--gray);
+    background-color: white;
+    border: none;
+    padding: 4vh 4vh 4vh 0;
+    text-align: left;
+    display: inline-block;
+}
+
+    .navLink:hover{
+        color: var(--black);
+    }
+
+
 
     h2{
         font-family: 'Inter UI';
@@ -451,11 +734,7 @@ transition: all 0.1s;
     }
 
 
-    .socialContainer{
-        grid-row: 4;
-        grid-column: 1 / 7; 
 
-    }
 
     .socialContainer{
         grid-row: 4;
@@ -473,6 +752,39 @@ transition: all 0.1s;
         margin-right:15px;
     }
 
+    .work-container{
+        width:70%;
+        margin: 20vh auto;
+        
+        
+    }
+
+        
+    .work-image{
+       
+       display: block;
+       margin: 15vh auto;
+       max-width: 100%;
+    }
+
+    .work-text{
+       
+        margin: 15vh auto;
+        max-width: 60%;
+        text-align: left;
+        font-family: 'Inter UI';
+        font-size: 2vh;
+        line-height: 145%;
+        font-style:  normal;
+        font-weight: 300;
+        color: var(--gray);
+     }
+
+     .work-text h4 {
+         color: var(--black);
+         margin-bottom: 3vh;
+     }
+
 }
 
 
@@ -488,6 +800,38 @@ transition: all 0.1s;
         grid-template-columns: 6;
         margin: 0 auto;
         width: 70%;
+    }
+
+    .nav-row{
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+       
+    }
+
+   .nav-container{
+       width: 70%;
+       margin: 0 auto;
+   }
+
+
+   .navLink{
+    font-family: 'Inter UI';
+    font-size: 3vh; 
+    line-height: 145%;
+    font-style:  normal;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--gray);
+    background-color: white;
+    border: none;
+    padding: 4vh 4vh 4vh 0;
+    text-align: left;
+    display: inline-block;
+}
+
+    .navLink:hover{
+        color: var(--black);
     }
 
     h2{
@@ -515,11 +859,7 @@ transition: all 0.1s;
     }
 
 
-    .socialContainer{
-        grid-row: 4;
-        grid-column: 1 / 7; 
-
-    }
+ 
 
     .socialContainer{
         grid-row: 4;
@@ -536,5 +876,38 @@ transition: all 0.1s;
         font-weight: 300;
         margin-right:15px;
     }
+
+    .work-container{
+        width:70%;
+        margin: 20vh auto;
+        
+        
+    }
+
+        
+    .work-image{
+       
+       display: block;
+       margin: 15vh auto;
+       max-width: 100%;
+    }
+
+    .work-text{
+       
+        margin: 15vh auto;
+        max-width: 50%;
+        text-align: left;
+        font-family: 'Inter UI';
+        font-size: 2vh;
+        line-height: 145%;
+        font-style:  normal;
+        font-weight: 300;
+        color: var(--gray);
+     }
+
+     .work-text h4 {
+         color: var(--black);
+         margin-bottom: 3vh;
+     }
 
 }
