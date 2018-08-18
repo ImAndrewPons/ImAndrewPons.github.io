@@ -204,3 +204,59 @@ transition: all 0.1s;
         color: black;
     transition: all 0.1s;
     }
+
+
+
+
+ @media only screen and (max-width: 768px) {
+    
+    .masterGrid{
+        display: grid;
+        grid-template-rows: 4;
+        grid-template-columns: 1;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    h2{
+        font-family: 'Inter UI';
+        font-size: 3vh;
+        line-height: 125%;
+        font-style:  normal;
+        font-weight: 700;
+        color: var(--black);
+        margin: 15vh 0;
+        grid-row: 2;
+        grid-column: 1 / 2;
+    }
+
+    h3{
+        font-family: 'Inter UI';
+        font-size: 2vh;
+        line-height: 145%;
+        font-style:  normal;
+        font-weight: 300;
+        color: var(--gray);
+        grid-row: 3;
+        grid-column: 1 / 2;
+    }
+
+
+    .socialContainer{
+        grid-row: 4;
+        grid-column: 1 / 2; 
+        justify-items: left;
+
+    }
+
+    .socialLink{
+        font-family: 'Inter UI';
+        font-size: 1.75vh;
+        line-height: 145%;
+        font-style:  normal;
+        font-weight: 300;
+        margin-right:15px;
+    }
+
+
+}
