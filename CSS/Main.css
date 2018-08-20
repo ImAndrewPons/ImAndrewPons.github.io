@@ -144,8 +144,99 @@
 
 
 
-    /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+
+
+
+
+
+
+    /* small devices (phones, 600px and down) */
+    @media only screen and (max-width: 480px) {
+
+
+
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(12, [col-start] 1fr);
+            margin: 0 auto;   
+        }
+    
+    
+        .heroText{
+            
+            font-size: 24px;
+            margin: 10vh 0;
+            color: var(--black);
+            line-height: 135%;
+            grid-column: col-start 2 / span 10 ;
+        }
+    
+        .homeBio{
+            font-size: 18px;
+            margin: 0 0 5vh 0;
+            grid-column: col-start 2 / span 10 ;
+        }
+    
+        .socialRow{
+            margin: 0;
+            grid-column: col-start 2 / span 10 ;
+            display: grid;
+            grid-template-columns: repeat(10, [col-start] 1fr);
+        }
+    
+        .socialLink{
+            font-size: 16px;
+        }
+
+        .socialLinkBox{
+            padding: 0 0 2vh 0;
+        }
+    
+    
+    
+        #dribbblebox{
+            grid-column: col-start 1 / span 4 ;
+            grid-row: 1 / 1;
+        }
+        #instagrambox{
+            grid-column: col-start 1 / span 4 ;
+            grid-row: 2/ 2;
+        }
+        #behancebox{
+            grid-column: col-start 1 / span 4 ;
+            grid-row: 3 / 3;
+        }
+        #unsplashbox{
+            grid-column: col-start 1 / span 4 ;
+            grid-row: 4 / 4;
+        }
+        #emailbox{
+            grid-column: col-start 1 / span 4 ;
+            grid-row: 5 / 5;
+        }
+    
+    
+        .disclaimer{
+            font-size: 12px;
+            margin: 10vh 0;
+            grid-column: col-start 2 / span 10 ;
+        }
+        
+    } 
+    
+
+
+
+
+
+
+
+
+
+
+    /* small devices (phones, 600px and down) */
+@media only screen and (min-width: 481px) {
 
 
 
