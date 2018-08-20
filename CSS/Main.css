@@ -9,7 +9,6 @@
     padding: 0;
 }
 
-
 @font-face {
     font-family: 'Inter UI';
     font-style:  normal;
@@ -69,110 +68,77 @@
     src: url("/assets/fonts/Inter-UI-BlackItalic.woff2") format("woff2"),
          url("/assets/fonts/Inter-UI-BlackItalic.woff") format("woff");
   }
-  
 
 
 
+/* overall text styles */
+
+  .heroText{
+    font-family: 'Inter UI';
+    color: var(--black);
+    line-height: 135%;
+    font-weight: 700;
+}
+
+.homeBio{
+    font-family: 'Inter UI';
+    color: var(--gray);
+    line-height: 150%;
+    font-weight: 300;
+}
+
+.disclaimer{
+    font-family: 'Inter UI';
+    color: var(--gray);
+    line-height: 150%;
+    font-weight: 300;
+}
+
+
+/* control the behavior of social links overall */
+
+.socialLink{
+    font-family: 'Inter UI';
+    color: var(--gray);
+    line-height: 150%;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#dribbble:hover{
+    color: #ea4c89;
+}
+#instagram:hover{
+    color: #c32aa3;
+}
+#behance:hover{
+    color: #1769ff;
+}
+#unsplash:hover{
+    color: #000000;
+}
+#email:hover{
+    color: #12B886;
+}
 
 
 
-
-
-
-
-
-
-
+/* control the behavior of project links in the main text */
 
 .projectLink{
+    text-decoration: underline;
     color: var(--black);
-    transition: all 0.1s;
 }
 
 .projectLink:hover{
+    text-decoration: underline;
     color: var(--gray);
-    transition: all 0.1s;
-}
-
-
-.homeLink{
-    color: var(--black);
-    transition: all 0.1s;
-    text-decoration: none;
-    font-family: 'Inter UI';
-    font-weight: 300;
-    font-size: 2vh;
-    margin: 0;
-    padding: 0;
-    grid-row: 1;
-    grid-column: 1 / 2;
-}
-
-.homeLink:hover{
-    color: var(--gray);
-    transition: all 0.1s;
-    text-decoration: none;
 }
 
 
 
 
 
-
-
-
-
-#drib{
-color: var(--gray);
-transition: all 0.1s;
-}
-
-    #drib:hover{
-        color: #ea4c89;
-    transition: all 0.1s;
-    }
-
-#insta{
-    color: var(--gray);
-    transition: all 0.1s;
-    }
-    
-    #insta:hover{
-        color: #e4405f;
-    transition: all 0.1s;
-    }
-
-
- #be{
-    color: var(--gray);
-    transition: all 0.1s;
-    }
-    
-    #be:hover{
-        color: #1769ff;
-    transition: all 0.1s;
-    }
-
-#un{
-    color: var(--gray);
-    transition: all 0.1s;
-    }
-    
-    #un:hover{
-        color: black;
-    transition: all 0.1s;
-    }
-
-
-#e{
-    color: var(--gray);
-    transition: all 0.1s;
-    }
-    
-    #e:hover{
-        color: black;
-    transition: all 0.1s;
-    }
 
 
 
@@ -180,734 +146,401 @@ transition: all 0.1s;
 
     /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .masterGrid{
+
+
+
+    .wrapper{
         display: grid;
-        grid-template-rows: 4;
-        grid-template-columns: 6;
-        margin: 0 auto;
-        width: 80%;
+        grid-template-columns: repeat(12, [col-start] 1fr);
+        margin: 0 auto;   
     }
 
-    .nav-row{
-        position: fixed; /* Set the navbar to fixed position */
-        top: 0; /* Position the navbar at the top of the page */
-        width: 100%; /* Full width */
-        background-color: none;
-    }
 
-   .nav-container{
-       width: 80%;
-       margin: 0 auto;
-       
-   }
-
-
-    .navLink{
-        font-family: 'Inter UI';
-        font-size: 3vh; 
-        line-height: 100%;
-        font-style:  normal;
-        font-weight: 300;
-        text-decoration: none;
-        color: var(--gray);
-        background-color: white;
-        padding: 3vh 3vh 3vh 0;
-        text-align: left;
-        display: inline-block;
-    }
-
-    .navLink:hover{
-        color: var(--black);
+    .heroText{
         
-    }
-
-    h2{
-        font-family: 'Inter UI';
-        font-size: 2.75vh;
-        line-height: 135%;
-        font-style:  normal;
-        font-weight: 700;
-        color: var(--black);
+        font-size: 24px;
         margin: 10vh 0;
-        grid-row: 2;
-        grid-column: 1 / 7;
+        color: var(--black);
+        line-height: 135%;
+        grid-column: col-start 2 / span 10 ;
     }
 
-    h3{
-        font-family: 'Inter UI';
-        font-size: 2vh;
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        color: var(--gray);
-        grid-row: 3;
-        grid-column: 1 / 7;
-        margin: 0 0 6vh 0;
+    .homeBio{
+        font-size: 18px;
+        margin: 0 0 5vh 0;
+        grid-column: col-start 2 / span 10 ;
     }
 
-
-
-
-    .socialContainer{
-        grid-row: 4;
-        grid-column: 1 / 7; 
-        justify-items: left;
-    
+    .socialRow{
+        margin: 0;
+        grid-column: col-start 2 / span 10 ;
+        display: grid;
+        grid-template-columns: repeat(10, [col-start] 1fr);
     }
-    
+
     .socialLink{
-        font-family: 'Inter UI';
-        font-size: 1.5vh; 
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        margin-right:15px;
+        font-size: 16px;
     }
 
 
-    .work-container{
-        width:80%;
-        margin: 25vh auto;
-        
-        
+
+    #dribbblebox{
+        grid-column: col-start 1 / span 2 ;
+        grid-row: 1 / 1;
+    }
+    #instagrambox{
+        grid-column: col-start 3 / span 2 ;
+        grid-row: 1 / 1;
+    }
+    #behancebox{
+        grid-column: col-start 5 / span 2 ;
+        grid-row: 1 / 1;
+    }
+    #unsplashbox{
+        grid-column: col-start 7 / span 2 ;
+        grid-row: 1 / 1;
+    }
+    #emailbox{
+        grid-column: col-start 9 / span 2 ;
+        grid-row: 1 / 1;
     }
 
-        
-    .work-image{
-       
-       display: block;
-       margin: 15vh auto;
-       max-width: 100%;
+
+    .disclaimer{
+        font-size: 12px;
+        margin-top: 10vh;
+        grid-column: col-start 2 / span 10 ;
     }
-
-    .work-text{
-       
-        margin: 15vh auto;
-        max-width: 100%;
-        text-align: left;
-        font-family: 'Inter UI';
-        font-size: 2vh;
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        color: var(--gray);
-     }
-
-     .work-text h4 {
-         color: var(--black);
-         margin-bottom: 3vh;
-     }
+    
 } 
 
 
 
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
 
-    .masterGrid{
+
+
+
+
+
+
+
+  /* Small devices (tablet portrait, above 600px) */
+  @media only screen and (min-width: 601px) {
+
+
+
+    .wrapper{
         display: grid;
-        grid-template-rows: 4;
-        grid-template-columns: 6;
-        margin: 0 auto;
-        width: 80%;
+        grid-template-columns: repeat(12, [col-start] 1fr);
+        margin: 0 auto; 
+        width: 90%;  
     }
 
-    .nav-row{
-        position: fixed; /* Set the navbar to fixed position */
-        top: 0; /* Position the navbar at the top of the page */
-        width: 100%; /* Full width */
 
-    }
-
-   .nav-container{
-       width: 80%;
-       margin: 0 auto;
-   }
-
-
-   .navLink{
-    font-family: 'Inter UI';
-    font-size: 3vh; 
-    line-height: 145%;
-    font-style:  normal;
-    font-weight: 300;
-    text-decoration: none;
-    color: var(--gray);
-    background-color: white;
-    border: none;
-    padding: 4vh 4vh 4vh 0;
-    text-align: left;
-    display: inline-block;
-}
-
-    .navLink:hover{
+    .heroText{
+        
+        font-size: 24px;
+        margin: 10vh 0;
         color: var(--black);
-    }
-
-    h2{
-        font-family: 'Inter UI';
-        font-size: 3vh;
         line-height: 135%;
-        font-style:  normal;
-        font-weight: 700;
-        color: var(--black);
-        margin: 12vh 0;
-        grid-row: 2;
-        grid-column: 1 / 7;
+        grid-column: col-start 2 / span 10 ;
     }
 
-    h3{
-        font-family: 'Inter UI';
-        font-size: 2vh;
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        color: var(--gray);
-        grid-row: 3;
-        grid-column: 1 / 7;
-        margin: 0 0 6vh 0;
+    .homeBio{
+        font-size: 18px;
+        margin: 0 0 5vh 0;
+        grid-column: col-start 2 / span 10 ;
     }
 
-
-
-    .socialContainer{
-        grid-row: 4;
-        grid-column: 1 / 7; 
-        justify-items: left;
-    
+    .socialRow{
+        margin: 0;
+        grid-column: col-start 2 / span 10 ;
+        display: grid;
+        grid-template-columns: repeat(10, [col-start] 1fr);
     }
-    
     .socialLink{
-        font-family: 'Inter UI';
-        font-size: 1.5vh; 
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        margin-right:15px;
+        font-size: 16px;
     }
 
-    .work-container{
-        width:80%;
-        margin: 25vh auto;
-        
-        
+
+
+    #dribbblebox{
+        grid-column: col-start 1 / span 2 ;
+        grid-row: 1 / 1;
+    }
+    #instagrambox{
+        grid-column: col-start 3 / span 2 ;
+        grid-row: 1 / 1;
+    }
+    #behancebox{
+        grid-column: col-start 5 / span 2 ;
+        grid-row: 1 / 1;
+    }
+    #unsplashbox{
+        grid-column: col-start 7 / span 2 ;
+        grid-row: 1 / 1;
+    }
+    #emailbox{
+        grid-column: col-start 9 / span 2 ;
+        grid-row: 1 / 1;
     }
 
-        
-    .work-image{
-       
-       display: block;
-       margin: 15vh auto;
-       max-width: 100%;
+    .disclaimer{
+        font-size: 12px;
+        margin-top: 10vh;
+        grid-column: col-start 2 / span 10 ;
     }
-
-    .work-text{
-       
-        margin: 15vh auto;
-        max-width: 100%;
-        text-align: left;
-        font-family: 'Inter UI';
-        font-size: 2vh;
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        color: var(--gray);
-     }
-
-     .work-text h4 {
-         color: var(--black);
-         margin-bottom: 3vh;
-     }
-
 } 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
 
-    .masterGrid{
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Medium devices (tablet landscape, above 900px) */
+  @media only screen and (min-width: 900px) {
+
+
+
+    .wrapper{
         display: grid;
-        grid-template-rows: 4;
-        grid-template-columns: 6;
-        margin: 0 auto;
-        width: 80%;
+        grid-template-columns: repeat(12, [col-start] 1fr);
+        margin: 0 auto; 
+        width: 90%;  
     }
 
-    .nav-row{
-        position: fixed; /* Set the navbar to fixed position */
-        top: 0; /* Position the navbar at the top of the page */
-        width: 100%; /* Full width */
-      
-    }
 
-   .nav-container{
-       width: 80%;
-       margin: 0 auto;
-   }
-
-
-   .navLink{
-    font-family: 'Inter UI';
-    font-size: 3vh; 
-    line-height: 145%;
-    font-style:  normal;
-    font-weight: 300;
-    text-decoration: none;
-    color: var(--gray);
-    background-color: white;
-    border: none;
-    padding: 4vh 4vh 4vh 0;
-    text-align: left;
-    display: inline-block;
-}
-
-    .navLink:hover{
+    .heroText{
+        font-size: 32px;
+        margin: 15vh 0 10vh 0;
         color: var(--black);
-    }
-
-    h2{
-        font-family: 'Inter UI';
-        font-size: 3.5vh;
         line-height: 135%;
-        font-style:  normal;
-        font-weight: 700;
-        color: var(--black);
-        margin: 12vh 0;
-        grid-row: 2;
-        grid-column: 1 / 7;
+        grid-column: col-start 2 / span 10 ;
     }
 
-    h3{
-        font-family: 'Inter UI';
-        font-size: 2vh;
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        color: var(--gray);
-        grid-row: 3;
-        grid-column: 1 / 5;
-        margin: 0 0 6vh 0;
+    .homeBio{
+        font-size: 18px;
+        margin: 0 0 5vh 0;
+        grid-column: col-start 2 / span 10 ;
     }
 
-
-
-
-    .socialContainer{
-        grid-row: 4;
-        grid-column: 1 / 7; 
-        justify-items: left;
-    
+    .socialRow{
+        margin: 0;
+        grid-column: col-start 2 / span 10 ;
+        display: grid;
+        grid-template-columns: repeat(10, [col-start] 1fr);
     }
-    
+
     .socialLink{
-        font-family: 'Inter UI';
-        font-size: 1.5vh; 
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        margin-right:15px;
+        font-size: 16px;
     }
 
-    .work-container{
-        width:80%;
-        margin: 25vh auto;
-        
-        
+
+
+    #dribbblebox{
+        grid-column: col-start 1 / span 2 ;
+        grid-row: 1 / 1;
+    }
+    #instagrambox{
+        grid-column: col-start 3 / span 2 ;
+        grid-row: 1 / 1;
+    }
+    #behancebox{
+        grid-column: col-start 5 / span 2 ;
+        grid-row: 1 / 1;
+    }
+    #unsplashbox{
+        grid-column: col-start 7 / span 2 ;
+        grid-row: 1 / 1;
+    }
+    #emailbox{
+        grid-column: col-start 9 / span 2 ;
+        grid-row: 1 / 1;
     }
 
-        
-    .work-image{
-       
-       display: block;
-       margin: 15vh auto;
-       max-width: 100%;
+    .disclaimer{
+        font-size: 12px;
+        margin-top: 10vh;
+        grid-column: col-start 2 / span 10 ;
     }
-
-    .work-text{
-       
-        margin: 15vh auto;
-        max-width: 80%;
-        text-align: left;
-        font-family: 'Inter UI';
-        font-size: 2vh;
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        color: var(--gray);
-     }
-
-     .work-text h4 {
-         color: var(--black);
-         margin-bottom: 3vh;
-     }
-
 } 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
 
-    .masterGrid{
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Standard devices (laptop, above 1200px) */
+  @media only screen and (min-width: 1200px) {
+
+
+
+    .wrapper{
         display: grid;
-        grid-template-rows: 4;
-        grid-template-columns: 6;
-        margin: 0 auto;
-        width: 75%;
+        grid-template-columns: repeat(12, [col-start] 1fr);
+        margin: 0 auto; 
+        width: 90%;  
     }
 
-    .nav-row{
-        position: fixed; /* Set the navbar to fixed position */
-        top: 0; /* Position the navbar at the top of the page */
-        width: 100%; /* Full width */
-    }
 
-   .nav-container{
-       width: 75%;
-       margin: 0 auto;
-   }
-
-
-   .navLink{
-    font-family: 'Inter UI';
-    font-size: 3vh; 
-    line-height: 145%;
-    font-style:  normal;
-    font-weight: 300;
-    text-decoration: none;
-    color: var(--gray);
-    background-color: white;
-    border: none;
-    padding: 4vh 4vh 4vh 0;
-    text-align: left;
-    display: inline-block;
-}
-
-    .navLink:hover{
+    .heroText{
+        
+        font-size: 32px;
+        margin: 15vh 0 10vh 0;
         color: var(--black);
-    }
-
-    h2{
-        font-family: 'Inter UI';
-        font-size: 4vh;
         line-height: 135%;
-        font-style:  normal;
-        font-weight: 700;
-        color: var(--black);
-        margin: 14vh 0;
-        grid-row: 2;
-        grid-column: 1 / 7;
+        grid-column: col-start 3 / span 8 ;
     }
 
-    h3{
-        font-family: 'Inter UI';
-        font-size: 2vh;
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        color: var(--gray);
-        grid-row: 3;
-        grid-column: 1 / 5;
-        margin: 0 0 6vh 0;
+    .homeBio{
+        font-size: 18px;
+        margin: 0 0 5vh 0;
+        grid-column: col-start 3 / span 6 ;
     }
 
-
-
-    .socialContainer{
-        grid-row: 4;
-        grid-column: 1 / 7; 
-        justify-items: left;
-    
+    .socialRow{
+        margin: 0;
+        grid-column: col-start 3 / span 8 ;
+        display: grid;
+        grid-template-columns: repeat(8, [col-start] 1fr);
     }
-    
+
     .socialLink{
-        font-family: 'Inter UI';
-        font-size: 1.5vh; 
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        margin-right:15px;
+        font-size: 16px;
     }
 
-    .work-container{
-        width:75%;
-        margin: 25vh auto;
-        
-        
+
+
+    #dribbblebox{
+        grid-column: col-start 1 / span 1 ;
+        grid-row: 1 / 1;
+    }
+    #instagrambox{
+        grid-column: col-start 2 / span 1 ;
+        grid-row: 1 / 1;
+    }
+    #behancebox{
+        grid-column: col-start 3 / span 1 ;
+        grid-row: 1 / 1;
+    }
+    #unsplashbox{
+        grid-column: col-start 4 / span 1 ;
+        grid-row: 1 / 1;
+    }
+    #emailbox{
+        grid-column: col-start 5 / span 1 ;
+        grid-row: 1 / 1;
     }
 
-        
-    .work-image{
-       
-       display: block;
-       margin: 15vh auto;
-       max-width: 100%;
+    .disclaimer{
+        font-size: 12px;
+        margin-top: 10vh;
+        grid-column: col-start 3 / span 6 ;
     }
-
-    .work-text{
-       
-        margin: 15vh auto;
-        max-width: 70%;
-        text-align: left;
-        font-family: 'Inter UI';
-        font-size: 2vh;
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        color: var(--gray);
-     }
-
-     .work-text h4 {
-         color: var(--black);
-         margin-bottom: 3vh;
-     }
-
 } 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 
-    .masterGrid{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* large devices (1080p, above 1600px) */
+  @media only screen and (min-width: 1800px) {
+
+
+
+    .wrapper{
         display: grid;
-        grid-template-rows: 4;
-        grid-template-columns: 6;
-        margin: 0 auto;
-        width: 70%;
+        grid-template-columns: repeat(12, [col-start] 1fr);
+        margin: 0 auto; 
+        width: 90%;  
     }
 
 
-    .nav-row{
-        position: fixed; /* Set the navbar to fixed position */
-        top: 0; /* Position the navbar at the top of the page */
-        width: 100%; /* Full width */
-       
-    }
-
-   .nav-container{
-       width: 70%;
-       margin: 0 auto;
-   }
-
-
-   .navLink{
-    font-family: 'Inter UI';
-    font-size: 3vh; 
-    line-height: 145%;
-    font-style:  normal;
-    font-weight: 300;
-    text-decoration: none;
-    color: var(--gray);
-    background-color: white;
-    border: none;
-    padding: 4vh 4vh 4vh 0;
-    text-align: left;
-    display: inline-block;
-}
-
-    .navLink:hover{
+    .heroText{
+        
+        font-size: 40px;
+        margin: 25vh 0 15vh 0;
         color: var(--black);
-    }
-
-
-
-    h2{
-        font-family: 'Inter UI';
-        font-size: 4.5vh;
         line-height: 135%;
-        font-style:  normal;
-        font-weight: 700;
-        color: var(--black);
-        margin: 14vh 0;
-        grid-row: 2;
-        grid-column: 1 / 7;
+        grid-column: col-start 3 / span 8 ;
     }
 
-    h3{
-        font-family: 'Inter UI';
-        font-size: 2.5vh;
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        color: var(--gray);
-        grid-row: 3;
-        grid-column: 1 / 5;
-        margin: 0 0 6vh 0;
+    .homeBio{
+        font-size: 20px;
+        margin: 0 0 5vh 0;
+        grid-column: col-start 3 / span 6 ;
     }
 
-
-
-
-    .socialContainer{
-        grid-row: 4;
-        grid-column: 1 / 7; 
-        justify-items: left;
-    
-    }
-    
-    .socialLink{
-        font-family: 'Inter UI';
-        font-size: 1.75vh; 
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        margin-right:15px;
-    }
-
-    .work-container{
-        width:70%;
-        margin: 20vh auto;
-        
-        
-    }
-
-        
-    .work-image{
-       
-       display: block;
-       margin: 15vh auto;
-       max-width: 100%;
-    }
-
-    .work-text{
-       
-        margin: 15vh auto;
-        max-width: 60%;
-        text-align: left;
-        font-family: 'Inter UI';
-        font-size: 2vh;
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        color: var(--gray);
-     }
-
-     .work-text h4 {
-         color: var(--black);
-         margin-bottom: 3vh;
-     }
-
-}
-
-
-
-
-
-/* Extra large devices (large laptops and desktops, 1921px and up) */
-@media only screen and (min-width: 1921px) {
-
-    .masterGrid{
+    .socialRow{
+        margin: 0;
+        grid-column: col-start 3 / span 8 ;
         display: grid;
-        grid-template-rows: 4;
-        grid-template-columns: 6;
-        margin: 0 auto;
-        width: 70%;
+        grid-template-columns: repeat(8, [col-start] 1fr);
     }
 
-    .nav-row{
-        position: fixed; /* Set the navbar to fixed position */
-        top: 0; /* Position the navbar at the top of the page */
-        width: 100%; /* Full width */
-       
-    }
-
-   .nav-container{
-       width: 70%;
-       margin: 0 auto;
-   }
-
-
-   .navLink{
-    font-family: 'Inter UI';
-    font-size: 3vh; 
-    line-height: 145%;
-    font-style:  normal;
-    font-weight: 300;
-    text-decoration: none;
-    color: var(--gray);
-    background-color: white;
-    border: none;
-    padding: 4vh 4vh 4vh 0;
-    text-align: left;
-    display: inline-block;
-}
-
-    .navLink:hover{
-        color: var(--black);
-    }
-
-    h2{
-        font-family: 'Inter UI';
-        font-size: 5vh;
-        line-height: 135%;
-        font-style:  normal;
-        font-weight: 700;
-        color: var(--black);
-        margin: 14vh 0;
-        grid-row: 2;
-        grid-column: 1 / 6;
-    }
-
-    h3{
-        font-family: 'Inter UI';
-        font-size: 2.5vh;
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        color: var(--gray);
-        grid-row: 3;
-        grid-column: 1 / 4;
-        margin: 0 0 6vh 0;
-    }
-
-
- 
-
-    .socialContainer{
-        grid-row: 4;
-        grid-column: 1 / 7; 
-        justify-items: left;
-    
-    }
-    
     .socialLink{
-        font-family: 'Inter UI';
-        font-size: 1.75vh; 
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        margin-right:15px;
+        font-size: 18px;
     }
 
-    .work-container{
-        width:70%;
-        margin: 20vh auto;
-        
-        
+
+
+    #dribbblebox{
+        grid-column: col-start 1 / span 1 ;
+        grid-row: 1 / 1;
+    }
+    #instagrambox{
+        grid-column: col-start 2 / span 1 ;
+        grid-row: 1 / 1;
+    }
+    #behancebox{
+        grid-column: col-start 3 / span 1 ;
+        grid-row: 1 / 1;
+    }
+    #unsplashbox{
+        grid-column: col-start 4 / span 1 ;
+        grid-row: 1 / 1;
+    }
+    #emailbox{
+        grid-column: col-start 5 / span 1 ;
+        grid-row: 1 / 1;
     }
 
-        
-    .work-image{
-       
-       display: block;
-       margin: 15vh auto;
-       max-width: 100%;
+    .disclaimer{
+        font-size: 12px;
+        margin-top: 10vh;
+        grid-column: col-start 3 / span 6 ;
     }
+} 
 
-    .work-text{
-       
-        margin: 15vh auto;
-        max-width: 50%;
-        text-align: left;
-        font-family: 'Inter UI';
-        font-size: 2vh;
-        line-height: 145%;
-        font-style:  normal;
-        font-weight: 300;
-        color: var(--gray);
-     }
 
-     .work-text h4 {
-         color: var(--black);
-         margin-bottom: 3vh;
-     }
 
-}
