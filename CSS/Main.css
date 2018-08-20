@@ -13,8 +13,8 @@
     font-family: 'Inter UI';
     font-style:  normal;
     font-weight: 400;
-    src: url("/Assets/Fonts/Inter-UI-Regular.woff2") format("woff2"),
-         url("/Assets/Fonts/Inter-UI-Regular.woff") format("woff");
+    src: url("./Assets/Fonts/Inter-UI-Regular.woff2") format("woff2"),
+         url("./Assets/Fonts/Inter-UI-Regular.woff") format("woff");
   }
   @font-face {
     font-family: 'Inter UI';
@@ -43,30 +43,30 @@
     font-family: 'Inter UI';
     font-style:  normal;
     font-weight: 700;
-    src: url("/assets/fonts/Inter-UI-Bold.woff2") format("woff2"),
-         url("/assets/fonts/Inter-UI-Bold.woff") format("woff");
+    src: url("/Assets/Fonts/Inter-UI-Bold.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-Bold.woff") format("woff");
   }
   @font-face {
     font-family: 'Inter UI';
     font-style:  italic;
     font-weight: 700;
-    src: url("/assets/fonts/Inter-UI-BoldItalic.woff2") format("woff2"),
-         url("/assets/fonts/Inter-UI-BoldItalic.woff") format("woff");
+    src: url("/Assets/Fonts/Inter-UI-BoldItalic.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-BoldItalic.woff") format("woff");
   }
   
   @font-face {
     font-family: 'Inter UI';
     font-style:  normal;
     font-weight: 900;
-    src: url("/assets/fonts/Inter-UI-Black.woff2") format("woff2"),
-         url("/assets/fonts/Inter-UI-Black.woff") format("woff");
+    src: url("/Assets/Fonts/Inter-UI-Black.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-Black.woff") format("woff");
   }
   @font-face {
     font-family: 'Inter UI';
     font-style:  italic;
     font-weight: 900;
-    src: url("/assets/fonts/Inter-UI-BlackItalic.woff2") format("woff2"),
-         url("/assets/fonts/Inter-UI-BlackItalic.woff") format("woff");
+    src: url("/Assets/Fonts/Inter-UI-BlackItalic.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-BlackItalic.woff") format("woff");
   }
 
 
