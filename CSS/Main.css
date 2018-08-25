@@ -159,12 +159,28 @@ html{
 
 .disclaimer{
     font-family: 'Inter UI';
-    color: var(--gray);
+    color: #3B3F42;
     line-height: 150%;
     font-weight: 300;
-    opacity: 0.4;
+    opacity: 0;
     line-height: 200%;
     letter-spacing: 1px;
+
+
+    -webkit-animation:hero-fadein ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation:hero-fadein ease-in 1;
+            animation:hero-fadein ease-in 1;
+
+            -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+
+            -webkit-animation-duration:1s;
+            -moz-animation-duration:1s;
+            animation-duration:1s;
+
+            animation-delay: 700ms;
+            -webkit-animation-delay: 700ms;
     
 }
 
