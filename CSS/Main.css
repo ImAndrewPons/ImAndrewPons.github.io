@@ -375,7 +375,7 @@ html{
     }
 
     .socialRow{
-        margin: 0;
+        margin: 0 0 5vh 0;
         grid-column: col-start 2 / span 10 ;
         display: grid;
         grid-template-columns: repeat(10, [col-start] 1fr);
@@ -458,7 +458,7 @@ html{
     }
 
     .socialRow{
-        margin: 0;
+        margin: 0 0 5vh 0;
         grid-column: col-start 2 / span 10 ;
         display: grid;
         grid-template-columns: repeat(10, [col-start] 1fr);
