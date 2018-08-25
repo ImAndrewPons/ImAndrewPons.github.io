@@ -10,7 +10,8 @@
 }
 
 html{
-    background-color: #0f0f0f;
+    background: #121212; /* Old browsers */
+
     cursor: crosshair;
 }
 
@@ -76,6 +77,35 @@ html{
 
 
 
+
+
+
+@keyframes hero-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes hero-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes hero-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
 /* overall text styles */
 
   .heroText{
@@ -83,6 +113,23 @@ html{
     color: #ffffff;
     line-height: 150%;
     font-weight: 500;
+    opacity: 0;
+
+
+            -webkit-animation:hero-fadein ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation:hero-fadein ease-in 1;
+            animation:hero-fadein ease-in 1;
+
+            -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+
+            -webkit-animation-duration:1s;
+            -moz-animation-duration:1s;
+            animation-duration:1s;
+
+            animation-delay: 100ms;
+            -webkit-animation-delay: 100ms;
 }
 
 .homeBio{
@@ -90,6 +137,24 @@ html{
     color: var(--gray);
     line-height: 180%;
     font-weight: 300;
+    opacity: 0;
+    background-color: transparent;
+    
+
+    -webkit-animation:hero-fadein ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation:hero-fadein ease-in 1;
+            animation:hero-fadein ease-in 1;
+
+            -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+
+            -webkit-animation-duration:1s;
+            -moz-animation-duration:1s;
+            animation-duration:1s;
+
+            animation-delay: 300ms;
+            -webkit-animation-delay: 300ms;
 }
 
 .disclaimer{
@@ -124,6 +189,22 @@ html{
     font-weight: 300;
     text-decoration: none;
     transition-duration: 1000ms;
+    opacity: 0;
+
+    -webkit-animation:hero-fadein ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation:hero-fadein ease-in 1;
+            animation:hero-fadein ease-in 1;
+
+            -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+
+            -webkit-animation-duration:1s;
+            -moz-animation-duration:1s;
+            animation-duration:1s;
+
+            animation-delay: 500ms;
+            -webkit-animation-delay: 500ms;
 }
 
 #dribbble:hover{
@@ -167,8 +248,6 @@ html{
     color: var(--gray);
     transition-duration: 50ms;
 }
-
-
 
 
 
