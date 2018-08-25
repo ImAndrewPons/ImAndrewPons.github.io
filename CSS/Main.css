@@ -9,6 +9,11 @@
     padding: 0;
 }
 
+html{
+    background-color: #0f0f0f;
+    cursor: crosshair;
+}
+
 @font-face {
     font-family: 'Inter UI';
     font-style:  normal;
@@ -75,9 +80,9 @@
 
   .heroText{
     font-family: 'Inter UI';
-    color: var(--black);
+    color: #ffffff;
     line-height: 135%;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .homeBio{
@@ -89,9 +94,24 @@
 
 .disclaimer{
     font-family: 'Inter UI';
-    color: var(--gray);
+    color: #353535;
     line-height: 150%;
     font-weight: 300;
+    display: none;
+}
+
+
+.egg{
+    position: fixed;
+    bottom: 60px;
+    left: 2500px;
+    width: 60px;
+    height: 60px;
+}
+
+.topContent{
+    height: 95vh;
+    border: 1px solid #ea4c89;
 }
 
 
@@ -103,22 +123,33 @@
     line-height: 150%;
     font-weight: 300;
     text-decoration: none;
+    transition-duration: 1000ms;
 }
 
 #dribbble:hover{
     color: #ea4c89;
+    transition-duration: 50ms;
+    cursor: url(/Assets/Images/dribbble-ball-mark@2x.png), auto;
 }
 #instagram:hover{
     color: #c32aa3;
+    transition-duration: 50ms;
+    cursor: url(/Assets/Images/instagram-mark@2x.png), auto;
 }
 #behance:hover{
     color: #1769ff;
+    transition-duration: 50ms;
+    cursor: url(/Assets/Images/behance-mark@2x.png), auto;
 }
 #unsplash:hover{
-    color: #000000;
+    color: #ffffff;
+    transition-duration: 50ms;
+    cursor: url(/Assets/Images/unsplash-mark@2x.png), auto;
 }
 #email:hover{
     color: #12B886;
+    transition-duration: 50ms;
+    cursor: url(/Assets/Images/email@2x.png), auto;
 }
 
 
@@ -127,12 +158,14 @@
 
 .projectLink{
     text-decoration: underline;
-    color: var(--black);
+    color: #ffffff;
+    transition-duration: 1000ms;
 }
 
 .projectLink:hover{
     text-decoration: underline;
     color: var(--gray);
+    transition-duration: 50ms;
 }
 
 
@@ -167,7 +200,7 @@
             
             font-size: 24px;
             margin: 10vh 0;
-            color: var(--black);
+            
             line-height: 135%;
             grid-column: col-start 2 / span 10 ;
         }
@@ -251,7 +284,7 @@
         
         font-size: 24px;
         margin: 10vh 0;
-        color: var(--black);
+        
         line-height: 135%;
         grid-column: col-start 2 / span 10 ;
     }
@@ -334,7 +367,7 @@
         
         font-size: 24px;
         margin: 10vh 0;
-        color: var(--black);
+        
         line-height: 135%;
         grid-column: col-start 2 / span 10 ;
     }
@@ -414,7 +447,7 @@
     .heroText{
         font-size: 32px;
         margin: 15vh 0 10vh 0;
-        color: var(--black);
+        
         line-height: 135%;
         grid-column: col-start 2 / span 10 ;
     }
@@ -496,8 +529,8 @@
     .heroText{
         
         font-size: 32px;
-        margin: 15vh 0 10vh 0;
-        color: var(--black);
+        margin: 20vh 0 10vh 0;
+    
         line-height: 135%;
         grid-column: col-start 3 / span 8 ;
     }
