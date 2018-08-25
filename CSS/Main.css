@@ -159,10 +159,13 @@ html{
 
 .disclaimer{
     font-family: 'Inter UI';
-    color: #353535;
+    color: var(--gray);
     line-height: 150%;
     font-weight: 300;
-    display: none;
+    opacity: 0.4;
+    line-height: 200%;
+    letter-spacing: 1px;
+    
 }
 
 
@@ -249,6 +252,13 @@ html{
     transition-duration: 50ms;
 }
 
+sup{
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0 0 0 4px;
+}
+
 
 
 
@@ -330,7 +340,7 @@ html{
     
     
         .disclaimer{
-            font-size: 12px;
+            font-size: 14px;
             margin: 10vh 0;
             grid-column: col-start 2 / span 10 ;
         }
@@ -410,8 +420,8 @@ html{
 
 
     .disclaimer{
-        font-size: 12px;
-        margin-top: 10vh;
+        font-size: 14px;
+        margin: 10vh 0 10vh 0;
         grid-column: col-start 2 / span 10 ;
     }
     
@@ -491,8 +501,8 @@ html{
     }
 
     .disclaimer{
-        font-size: 12px;
-        margin-top: 10vh;
+        font-size: 14px;
+        margin: 10vh 0 10vh 0;
         grid-column: col-start 2 / span 10 ;
     }
 } 
@@ -572,8 +582,8 @@ html{
     }
 
     .disclaimer{
-        font-size: 12px;
-        margin-top: 10vh;
+        font-size: 14px;
+        margin: 10vh 0 10vh 0;
         grid-column: col-start 2 / span 10 ;
     }
 } 
@@ -655,8 +665,8 @@ html{
     }
 
     .disclaimer{
-        font-size: 12px;
-        margin-top: 10vh;
+        font-size: 14px;
+        margin: 10vh 0 10vh 0;
         grid-column: col-start 3 / span 6 ;
     }
 } 
@@ -739,8 +749,8 @@ html{
     }
 
     .disclaimer{
-        font-size: 12px;
-        margin-top: 10vh;
+        font-size: 14px;
+        margin: 10vh 0 10vh 0;
         grid-column: col-start 3 / span 6 ;
     }
 } 
