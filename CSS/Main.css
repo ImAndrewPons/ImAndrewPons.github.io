@@ -81,14 +81,14 @@ html{
   .heroText{
     font-family: 'Inter UI';
     color: #ffffff;
-    line-height: 135%;
+    line-height: 150%;
     font-weight: 500;
 }
 
 .homeBio{
     font-family: 'Inter UI';
     color: var(--gray);
-    line-height: 150%;
+    line-height: 180%;
     font-weight: 300;
 }
 
