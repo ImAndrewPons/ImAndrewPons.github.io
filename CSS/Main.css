@@ -719,8 +719,8 @@ sup{
         
         font-size: 40px;
         margin: 25vh 0 15vh 0;
-        color: var(--black);
-        line-height: 135%;
+        color: #ffffff;
+        line-height: 150%;
         grid-column: col-start 3 / span 8 ;
     }
 
