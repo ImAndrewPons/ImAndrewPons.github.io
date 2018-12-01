@@ -303,6 +303,7 @@ h3{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    margin: 15% 0 0 0;
 }
 
 .workimage{
@@ -469,9 +470,9 @@ h3{
         flex-basis: 100%;
         -ms-flex: auto;
         position: relative;
-        padding: 5%;
+        padding: 0 5% 15% 5%;
         box-sizing: border-box;
-        margin: 0 0 48px 0;
+        
     }
 
 
@@ -561,9 +562,9 @@ h3{
         flex-basis: 50%;
         -ms-flex: auto;
         position: relative;
-        padding: 1%;
+        padding: 0 2% 10% 2%;
         box-sizing: border-box;
-        margin: 0 0 48px 0;
+        
     }
 
 
@@ -652,9 +653,9 @@ h3{
         flex-basis: 33.333%;
         -ms-flex: auto;
         position: relative;
-        padding: 1%;
+        padding: 0 2% 10% 2%;
         box-sizing: border-box;
-        margin: 0 0 48px 0;
+        
     }
 
 
@@ -746,9 +747,9 @@ h3{
         flex-basis: 33.333%;
         -ms-flex: auto;
         position: relative;
-        padding: 1%;
+        padding: 0 1% 7% 1%;
         box-sizing: border-box;
-        margin: 0 0 48px 0;
+        
     }
 
 
@@ -842,9 +843,9 @@ h3{
         flex-basis: 25%;
         -ms-flex: auto;
         position: relative;
-        padding: 1%;
+        padding: 0 1% 5% 1%;
         box-sizing: border-box;
-        margin: 0 0 48px 0;
+    
     }
 
 
