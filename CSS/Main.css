@@ -15,6 +15,10 @@ html{
     cursor: crosshair;
 }
 
+
+::-moz-selection { background: white; color: #212529;}
+::selection { background: white; color: #212529;}
+
 @font-face {
     font-family: 'Inter UI';
     font-style:  normal;
@@ -124,9 +128,9 @@ html{
             -moz-animation-fill-mode:forwards;
             animation-fill-mode:forwards;
 
-            -webkit-animation-duration:1s;
-            -moz-animation-duration:1s;
-            animation-duration:1s;
+            -webkit-animation-duration:400ms;
+            -moz-animation-duration:400ms;
+            animation-duration:400ms;
 
             animation-delay: 100ms;
             -webkit-animation-delay: 100ms;
@@ -149,12 +153,12 @@ html{
             -moz-animation-fill-mode:forwards;
             animation-fill-mode:forwards;
 
-            -webkit-animation-duration:1s;
-            -moz-animation-duration:1s;
-            animation-duration:1s;
+            -webkit-animation-duration:400ms;
+            -moz-animation-duration:400ms;
+            animation-duration:400ms;
 
-            animation-delay: 300ms;
-            -webkit-animation-delay: 300ms;
+            animation-delay: 200ms;
+            -webkit-animation-delay: 200ms;
 }
 
 .disclaimer{
@@ -175,12 +179,12 @@ html{
             -moz-animation-fill-mode:forwards;
             animation-fill-mode:forwards;
 
-            -webkit-animation-duration:1s;
-            -moz-animation-duration:1s;
-            animation-duration:1s;
+            -webkit-animation-duration:400ms;
+            -moz-animation-duration:400ms;
+            animation-duration:400ms;
 
-            animation-delay: 700ms;
-            -webkit-animation-delay: 700ms;
+            animation-delay: 400ms;
+            -webkit-animation-delay: 400ms;
     
 }
 
@@ -218,12 +222,12 @@ html{
             -moz-animation-fill-mode:forwards;
             animation-fill-mode:forwards;
 
-            -webkit-animation-duration:1s;
-            -moz-animation-duration:1s;
-            animation-duration:1s;
+            -webkit-animation-duration:400ms;
+            -moz-animation-duration:400ms;
+            animation-duration:400ms;
 
-            animation-delay: 500ms;
-            -webkit-animation-delay: 500ms;
+            animation-delay: 300ms;
+            -webkit-animation-delay: 300ms;
 }
 
 #dribbble:hover{
@@ -277,7 +281,56 @@ sup{
 
 
 
+h3{
+    font-family: 'Inter UI';
+    line-height: 150%;
+    font-weight: 300;
+    text-decoration: none;
+    color: #ffffff;
+}
 
+
+.workrow{
+    margin: 0;
+    grid-column: col-start 1 / span 12 ;
+    display: grid;
+    grid-template-columns: repeat(1, [col-start] 1fr);
+
+    
+}
+
+.workgrid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.workimage{
+    width: 100%;
+}
+
+.worktext{
+    text-align: left;
+    margin: 24px 0 0 0;
+    padding: 0 5%;
+}
+
+.workcontent{
+    font-family: 'Inter UI';
+    color: var(--gray);
+    line-height: 150%;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.worklink{
+    padding: 24px 0 0 0;
+    font-family: 'Inter UI';
+    color: #ffffff;
+    line-height: 150%;
+    font-weight: 300;
+    text-decoration: underline;
+}
 
 
 
@@ -411,6 +464,16 @@ sup{
         font-size: 16px;
     }
 
+    .workitem{
+       
+        flex-basis: 100%;
+        -ms-flex: auto;
+        position: relative;
+        padding: 5%;
+        box-sizing: border-box;
+        margin: 0 0 48px 0;
+    }
+
 
 
     #dribbblebox{
@@ -493,6 +556,16 @@ sup{
         font-size: 16px;
     }
 
+    .workitem{
+       
+        flex-basis: 50%;
+        -ms-flex: auto;
+        position: relative;
+        padding: 1%;
+        box-sizing: border-box;
+        margin: 0 0 48px 0;
+    }
+
 
 
     #dribbblebox{
@@ -572,6 +645,16 @@ sup{
 
     .socialLink{
         font-size: 16px;
+    }
+
+    .workitem{
+       
+        flex-basis: 33.333%;
+        -ms-flex: auto;
+        position: relative;
+        padding: 1%;
+        box-sizing: border-box;
+        margin: 0 0 48px 0;
     }
 
 
@@ -658,6 +741,19 @@ sup{
     }
 
 
+    .workitem{
+       
+        flex-basis: 33.333%;
+        -ms-flex: auto;
+        position: relative;
+        padding: 1%;
+        box-sizing: border-box;
+        margin: 0 0 48px 0;
+    }
+
+
+
+
 
     #dribbblebox{
         grid-column: col-start 1 / span 1 ;
@@ -739,6 +835,16 @@ sup{
 
     .socialLink{
         font-size: 18px;
+    }
+
+    .workitem{
+       
+        flex-basis: 25%;
+        -ms-flex: auto;
+        position: relative;
+        padding: 1%;
+        box-sizing: border-box;
+        margin: 0 0 48px 0;
     }
 
 
