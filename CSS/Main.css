@@ -384,6 +384,27 @@ h3{
         .socialLinkBox{
             padding: 0 0 2vh 0;
         }
+
+        .workitem{
+       
+            flex-basis: 100%;
+            -ms-flex: auto;
+            position: relative;
+            padding: 0 0 15% 0;
+            box-sizing: border-box;
+            
+        }
+
+        .workrow{
+            margin: 0;
+            grid-column: col-start 2 / span 10 ;
+            display: grid;
+            grid-template-columns: repeat(1, [col-start] 1fr);
+        
+            
+        }
+
+        
     
     
     
@@ -477,6 +498,8 @@ h3{
 
 
 
+
+
     #dribbblebox{
         grid-column: col-start 1 / span 2 ;
         grid-row: 1 / 1;
@@ -566,6 +589,8 @@ h3{
         box-sizing: border-box;
         
     }
+
+    
 
 
 
