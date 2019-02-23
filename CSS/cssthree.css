@@ -1,0 +1,752 @@
+/*My Variables*/
+:root{
+    --black: #212529;
+    --gray: #868E96;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: #121212; /* Old browsers */
+
+    cursor: crosshair;
+    font-family: 'Inter UI';
+    text-transform: uppercase;
+    color: white;
+}
+
+a:visited { text-decoration: none; }
+
+
+::-moz-selection { background: white; color: #212529;}
+::selection { background: white; color: #212529;}
+
+@font-face {
+    font-family: 'Inter UI';
+    font-style:  normal;
+    font-weight: 400;
+    src: url("/Assets/Fonts/Inter-UI-Regular.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  italic;
+    font-weight: 400;
+    src: url("/Assets/Fonts/Inter-UI-Italic.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-Italic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  normal;
+    font-weight: 500;
+    src: url("/Assets/Fonts/Inter-UI-Medium.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-Medium.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  italic;
+    font-weight: 500;
+    src: url("/Assets/Fonts/Inter-UI-MediumItalic.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-MediumItalic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  normal;
+    font-weight: 700;
+    src: url("/Assets/Fonts/Inter-UI-Bold.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-Bold.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  italic;
+    font-weight: 700;
+    src: url("/Assets/Fonts/Inter-UI-BoldItalic.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-BoldItalic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  normal;
+    font-weight: 900;
+    src: url("/Assets/Fonts/Inter-UI-Black.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-Black.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  italic;
+    font-weight: 900;
+    src: url("/Assets/Fonts/Inter-UI-BlackItalic.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-BlackItalic.woff") format("woff");
+  }
+
+
+
+
+
+
+  .workLink{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* control the behavior of social links overall */
+
+.socialLink{
+    font-family: 'Inter UI';
+    color: var(--white);
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.workLabel{
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+    /* small devices (phones, 600px and down) */
+    @media only screen and (max-width: 480px) {
+
+
+        .fixedContent{
+            width: 95%;
+            margin: 0 auto;
+        }
+    
+        .headerCol1{
+            width: 100%;
+        }
+    
+        .myName{
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0 2vw 0 0;
+            padding: 12px 0 9px 0;
+            border-bottom: 1px solid #ffffff;      
+        }
+        .textLink{
+            
+            text-decoration: none;
+            color: #ffffff;
+        }
+    
+        .textLink:hover{
+            color: #868E96;
+        }
+    
+        .headerCol2{
+            width: 100%;
+            
+        }
+    
+        .social{
+            border-bottom: 1px solid #ffffff;
+            width: 100%;
+            padding: 20vh 0 9px 0;
+            background-color: #121212;
+            font-size: 12px;
+        }
+    
+        .headerText{
+            margin: 0 0 12px 0;
+        }
+    
+        .columnLabel{
+            font-size: 7vw;
+                color: rgba(0, 0, 0, 0);
+                -webkit-text-stroke: 1px white;
+                font-weight: 900;
+        }
+     
+        .heroText{
+            font-size: 3vw;
+            margin: 0 0 0 0;
+            line-height: 100%;
+            font-weight: 400;
+            display: none;
+        }
+
+        .heroMobile{
+            font-size: 7vw;
+            margin: 12px 0 0 0;
+            line-height: 100%;
+            font-weight: 400;
+        
+        }
+    
+    
+        .workContainer{
+            padding: 0 0 0 0;
+            width: 95%;
+            margin: 0 auto;
+        }
+        .workColumn{
+            margin: 10vh 0 0 0;
+        }
+    
+        .workItem{
+            padding: 0;
+            margin: 0 0 20vh 0;
+        }
+    
+        .workImage{
+            margin: 0 0 12px 0;
+            padding: 0;
+            width: 100%;
+        }
+    
+    
+        .workDescription{
+            color: #ffffff;
+            text-decoration: none;
+            float: left;
+            width: 80%;
+            font-size: 14px;
+        }
+    
+        .year{
+            float: left;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        
+    } 
+    
+
+
+
+
+
+
+
+
+
+
+    /* small devices (phones, 600px and down) */
+@media only screen and (min-width: 481px) {
+
+    .fixedContent{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .headerCol1{
+        width: 100%;
+    }
+
+    .myName{
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0 2vw 0 0;
+        padding: 12px 0 9px 0;
+        border-bottom: 1px solid #ffffff;      
+    }
+    .textLink{
+        
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .textLink:hover{
+        color: #868E96;
+    }
+
+    .headerCol2{
+        width: 100%;
+        
+    }
+
+    .social{
+        border-bottom: 1px solid #ffffff;
+        width: 100%;
+        padding: 20vh 0 9px 0;
+        background-color: #121212;
+        font-size: 14px;
+    }
+
+    .headerText{
+        margin: 0 0 12px 0;
+    }
+
+    .columnLabel{
+        font-size: 7vw;
+            color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 1px white;
+            font-weight: 900;
+    }
+ 
+    .heroText{
+        font-size: 3vw;
+        margin: 0 0 0 0;
+        line-height: 100%;
+        font-weight: 400;
+        display: none;
+    }
+
+    .heroMobile{
+        font-size: 7vw;
+        margin: 12px 0 0 0;
+        line-height: 100%;
+        font-weight: 400;
+    
+    }
+
+
+    .workContainer{
+        padding: 0 0 0 0;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .workColumn{
+        margin: 10vh 0 0 0;
+    }
+
+    .workItem{
+        padding: 0;
+        margin: 0 0 20vh 0;
+    }
+
+    .workImage{
+        margin: 0 0 12px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .workDescription{
+        color: #ffffff;
+        text-decoration: none;
+        float: left;
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .year{
+        float: left;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Small devices (tablet portrait, above 600px) */
+  @media only screen and (min-width: 601px) {
+
+
+    .fixedContent{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .headerCol1{
+        width: 100%;
+    }
+
+    .myName{
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 2vw 0 0;
+        padding: 12px 0 9px 0;
+        border-bottom: 1px solid #ffffff;      
+    }
+    .textLink{
+        
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .textLink:hover{
+        color: #868E96;
+    }
+
+    .headerCol2{
+        width: 100%;
+        
+    }
+
+    .social{
+        border-bottom: 1px solid #ffffff;
+        width: 100%;
+        padding: 20vh 0 9px 0;
+        background-color: #121212;
+        font-size: 16px;
+    }
+
+    .headerText{
+        margin: 0 0 12px 0;
+    }
+
+    .columnLabel{
+        font-size: 7vw;
+            color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 1px white;
+            font-weight: 900;
+    }
+ 
+    .heroText{
+        font-size: 3vw;
+        margin: 0 0 0 0;
+        line-height: 100%;
+        font-weight: 400;
+        display: none;
+    }
+
+    .heroMobile{
+        font-size: 7vw;
+        margin: 12px 0 0 0;
+        line-height: 100%;
+        font-weight: 400;
+    
+    }
+
+
+    .workContainer{
+        padding: 0 0 0 0;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .workColumn{
+        margin: 10vh 0 0 0;
+    }
+
+    .workItem{
+        padding: 0;
+        margin: 0 0 20vh 0;
+    }
+
+    .workImage{
+        margin: 0 0 12px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .workDescription{
+        color: #ffffff;
+        text-decoration: none;
+        float: left;
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .year{
+        float: left;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Medium devices (tablet landscape, above 900px) */
+  @media only screen and (min-width: 900px) {
+
+    .fixedContent{
+        position: fixed;
+        width: 95%;
+        top: 0;
+        left: 2.5%;
+    }
+
+    .headerCol1{
+        width: 33.333%;
+        float: left;
+        
+    }
+
+    .myName{
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 2vw 0 0;
+        padding: 12px 0 9px 0;
+        border-bottom: 1px solid #ffffff;      
+    }
+    .textLink{
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .textLink:hover{
+        color: #868E96;
+    }
+
+    .headerCol2{
+        float: left;
+        width: 66.666%;
+        
+    }
+
+    .social{
+        border-bottom: 1px solid #ffffff;
+        width: 100%;
+        padding: 12px 0 9px 0;
+        background-color: #121212;
+    }
+
+    .headerText{
+        margin: 0 0 12px 0;
+    }
+
+    .columnLabel{
+        font-size: 3vw;
+            color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 1px white;
+            font-weight: 900;
+    }
+ 
+    .heroText{
+        font-size: 3vw;
+        margin: 0 0 0 0;
+        line-height: 100%;
+        font-weight: 400;
+        position: fixed;
+        top: 50vh;
+        left: 2.5vw;
+        color: #ffffff;
+        display: block;
+    }
+
+    .heroMobile{display: none;}
+
+
+    .workContainer{
+        padding: 0 0 0 0;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .workColumn{
+        margin: 50vh 0 0 33.333%;
+    }
+
+    .workItem{
+        padding: 0;
+        margin: 0 0 20vh 0;
+    }
+
+    .workImage{
+        margin: 0 0 12px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .workDescription{
+        color: #ffffff;
+        text-decoration: none;
+        float: left;
+        width: 50%;
+    }
+
+    .year{
+        float: left;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Standard devices (laptop, above 1200px) */
+  @media only screen and (min-width: 1200px) {
+
+
+
+    .fixedContent{
+        position: fixed;
+        width: 95%;
+        top: 0;
+        left: 2.5%;
+    }
+
+    .headerCol1{
+        width: 33.333%;
+        float: left;
+        
+    }
+
+    .myName{
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 2vw 0 0;
+        padding: 12px 0 9px 0;
+        border-bottom: 1px solid #ffffff;      
+    }
+    .textLink{
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .textLink:hover{
+        color: #868E96;
+    }
+
+    .headerCol2{
+        float: left;
+        width: 66.666%;
+        
+    }
+
+    .social{
+        border-bottom: 1px solid #ffffff;
+        width: 100%;
+        padding: 12px 0 9px 0;
+        background-color: #121212;
+    }
+
+    .headerText{
+        margin: 0 0 12px 0;
+    }
+
+    .columnLabel{
+        font-size: 2vw;
+            color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 1px white;
+            font-weight: 900;
+    }
+ 
+    .heroText{
+        font-size: 3vw;
+        margin: 0 0 0 0;
+        line-height: 100%;
+        font-weight: 400;
+        position: fixed;
+        top: 50vh;
+        left: 2.5vw;
+    }
+
+
+    .workContainer{
+        padding: 0 0 0 0;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .workColumn{
+        margin: 50vh 0 0 33.333%;
+    }
+
+    .workItem{
+        padding: 0;
+        margin: 0 0 20vh 0;
+    }
+
+    .workImage{
+        margin: 0 0 12px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .workDescription{
+        color: #ffffff;
+        text-decoration: none;
+        float: left;
+        width: 50%;
+    }
+
+    .year{
+        float: left;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* large devices (1080p, above 1600px) */
+  @media only screen and (min-width: 1800px) {
+
+
+
+} 
+
+
+

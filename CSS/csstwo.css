@@ -1,0 +1,411 @@
+/*My Variables*/
+:root{
+    --black: #212529;
+    --gray: #868E96;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: #121212; /* Old browsers */
+
+    cursor: crosshair;
+    font-family: 'Inter UI';
+    text-transform: uppercase;
+}
+
+
+::-moz-selection { background: white; color: #212529;}
+::selection { background: white; color: #212529;}
+
+@font-face {
+    font-family: 'Inter UI';
+    font-style:  normal;
+    font-weight: 400;
+    src: url("/Assets/Fonts/Inter-UI-Regular.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  italic;
+    font-weight: 400;
+    src: url("/Assets/Fonts/Inter-UI-Italic.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-Italic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  normal;
+    font-weight: 500;
+    src: url("/Assets/Fonts/Inter-UI-Medium.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-Medium.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  italic;
+    font-weight: 500;
+    src: url("/Assets/Fonts/Inter-UI-MediumItalic.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-MediumItalic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  normal;
+    font-weight: 700;
+    src: url("/Assets/Fonts/Inter-UI-Bold.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-Bold.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  italic;
+    font-weight: 700;
+    src: url("/Assets/Fonts/Inter-UI-BoldItalic.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-BoldItalic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  normal;
+    font-weight: 900;
+    src: url("/Assets/Fonts/Inter-UI-Black.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-Black.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter UI';
+    font-style:  italic;
+    font-weight: 900;
+    src: url("/Assets/Fonts/Inter-UI-BlackItalic.woff2") format("woff2"),
+         url("/Assets/Fonts/Inter-UI-BlackItalic.woff") format("woff");
+  }
+
+
+
+
+
+
+@keyframes hero-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes hero-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes hero-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+/* overall text styles */
+
+  .herotext{
+    font-family: 'Inter UI';
+    color: #ffffff;
+    line-height: 120%;
+    font-weight: 500;
+    opacity: 0;
+    text-transform: uppercase;
+
+
+            -webkit-animation:hero-fadein ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation:hero-fadein ease-in 1;
+            animation:hero-fadein ease-in 1;
+
+            -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+
+            -webkit-animation-duration:400ms;
+            -moz-animation-duration:400ms;
+            animation-duration:400ms;
+
+            animation-delay: 100ms;
+            -webkit-animation-delay: 100ms;
+}
+
+
+
+
+
+
+
+/* control the behavior of social links overall */
+
+.socialLink{
+    font-family: 'Inter UI';
+    color: var(--white);
+    line-height: 150%;
+    font-weight: 300;
+    text-decoration: none;
+    transition-duration: 1000ms;
+    opacity: 0;
+    text-transform: uppercase;
+
+    -webkit-animation:hero-fadein ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation:hero-fadein ease-in 1;
+            animation:hero-fadein ease-in 1;
+
+            -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+
+            -webkit-animation-duration:400ms;
+            -moz-animation-duration:400ms;
+            animation-duration:400ms;
+
+            animation-delay: 300ms;
+            -webkit-animation-delay: 300ms;
+}
+
+#dribbble:hover{
+    color: #ea4c89;
+    transition-duration: 50ms;
+    cursor: url(/Assets/Images/dribbble-ball-mark@2x.png), auto;
+}
+#instagram:hover{
+    color: #c32aa3;
+    transition-duration: 50ms;
+    cursor: url(/Assets/Images/instagram-mark@2x.png), auto;
+}
+#behance:hover{
+    color: #1769ff;
+    transition-duration: 50ms;
+    cursor: url(/Assets/Images/behance-mark@2x.png), auto;
+}
+#unsplash:hover{
+    color: #ffffff;
+    transition-duration: 50ms;
+    cursor: url(/Assets/Images/unsplash-mark@2x.png), auto;
+}
+#email:hover{
+    color: #12B886;
+    transition-duration: 50ms;
+    cursor: url(/Assets/Images/email@2x.png), auto;
+}
+
+
+
+
+
+
+    /* small devices (phones, 600px and down) */
+    @media only screen and (max-width: 480px) {
+
+
+        
+    } 
+    
+
+
+
+
+
+
+
+
+
+
+    /* small devices (phones, 600px and down) */
+@media only screen and (min-width: 481px) {
+
+    
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Small devices (tablet portrait, above 600px) */
+  @media only screen and (min-width: 601px) {
+
+    
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Medium devices (tablet landscape, above 900px) */
+  @media only screen and (min-width: 900px) {
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Standard devices (laptop, above 1200px) */
+  @media only screen and (min-width: 1200px) {
+
+     /*  .heroimg{
+        background: url(https://images.unsplash.com/photo-1547665979-bb809517610d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80);
+        background-size: cover;
+        width: 100%;
+        height: 30vh; */
+
+
+        .wrapper{
+            display: grid;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+    
+        }
+
+        .workWrapper{
+            display: grid;
+            
+        }
+
+        .mainGrid{
+            display: grid;
+            grid-template-columns: repeat(12, [col-start] 1fr);
+            margin: 0px auto; 
+            width: 95%;  
+        }
+
+        .designerNameFrame{
+            grid-column: col-start 1 / span 4 ;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .designerName{
+            font-size: 16px;
+            color: var(--white);
+            font-weight: 400;
+            margin: 12px 0 8px 0;
+        }
+
+        .socialFrame{
+            grid-column: col-start 5 / span 12 ;
+            border-bottom: 1px solid #ffffff;
+            background-color: #121212; 
+        
+        }
+
+        .aboutLabel{
+            margin: 12px 0 0 0;
+            grid-column: col-start 1 / span 4 ;
+        }
+
+        h3{
+            font-size: 2vw;
+            color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 1px white;
+            font-weight: 900;
+        }
+
+        .recentLabel{
+            margin: 12px 0 0 0;
+            grid-column: col-start 5 / span 12 ;
+        }
+
+    .herotext{
+        
+        font-size: 2.75vw;
+        margin: 20vh 0 0 0;
+        line-height: 100%;
+        grid-column: col-start 1 / span 4 ;
+    }
+
+    .workColumn{
+        grid-column: col-start 5 / span 12 ;
+        padding: 30vh 0 0 0;
+    }
+
+    .workItem{
+        padding: 0;
+        margin: 0 0 20vh 0;
+    }
+
+    .workImage{
+        margin: 0 0 16px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .workDescription{
+        font-size: 16px;
+        color: white;;
+    }
+
+
+    .socialLink{
+        font-size: 16px;
+    }
+
+
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* large devices (1080p, above 1600px) */
+  @media only screen and (min-width: 1800px) {
+
+
+
+} 
+
+
+
