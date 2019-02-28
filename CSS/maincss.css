@@ -128,6 +128,10 @@ a:visited { text-decoration: none; }
     /* small devices (phones, 600px and down) */
     @media only screen and (max-width: 480px) {
 
+        .workHover{
+            display: none;
+         }
+
 
         .fixedContent{
             width: 95%;
@@ -247,6 +251,10 @@ a:visited { text-decoration: none; }
 
     /* small devices (phones, 600px and down) */
 @media only screen and (min-width: 481px) {
+
+    .workHover{
+        display: none;
+     }
 
     .fixedContent{
         width: 95%;
@@ -394,6 +402,10 @@ a:visited { text-decoration: none; }
 
     .textLink:hover{
         color: #868E96;
+    }
+
+    .workHover{
+       display: none;
     }
 
     .headerCol2{
