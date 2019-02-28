@@ -97,20 +97,6 @@ a:visited { text-decoration: none; }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* control the behavior of social links overall */
-
 .socialLink{
     font-family: 'Inter UI';
     color: var(--white);
@@ -123,6 +109,14 @@ a:visited { text-decoration: none; }
 .workLabel{
     opacity: 0.5;
 }
+
+
+.footerText{
+    font-size: 12px;
+    margin: 0 0 20vh 0;
+    opacity: 0.6;
+}
+
 
 
 
@@ -147,7 +141,7 @@ a:visited { text-decoration: none; }
         .myName{
             font-size: 14px;
             font-weight: 400;
-            margin: 0 2vw 0 0;
+            margin: 0;
             padding: 12px 0 9px 0;
             border-bottom: 1px solid #ffffff;      
         }
@@ -266,7 +260,7 @@ a:visited { text-decoration: none; }
     .myName{
         font-size: 14px;
         font-weight: 400;
-        margin: 0 2vw 0 0;
+        margin: 0 0 0 0;
         padding: 12px 0 9px 0;
         border-bottom: 1px solid #ffffff;      
     }
@@ -577,12 +571,50 @@ a:visited { text-decoration: none; }
     .workItem{
         padding: 0;
         margin: 0 0 20vh 0;
+        transition: all 0.25s;
+        position: relative;
     }
+    
+    .workItem:hover .workImage {
+        opacity: 0.6;
+        filter: blur(5px);
+        transition: all 0.25s;
+    }
+
+    .workItem:hover .workHoverText {
+        filter: blur(0px);
+        opacity: 1;
+    }
+
 
     .workImage{
         margin: 0 0 12px 0;
         padding: 0;
         width: 100%;
+        transition: all 0.25s;
+        z-index: -2;
+    }
+
+    .workHover{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .workHoverText{
+        font-size: 10vw;
+        margin: auto;
+        color: #ffffff;
+        line-height: 100%;
+        transition: all 0.25s;
+        filter: blur(10px);
+        z-index: 2;
+        opacity: 0;
+        color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 1px white;
+            font-weight: 900;
     }
 
 
@@ -626,6 +658,7 @@ a:visited { text-decoration: none; }
         width: 95%;
         top: 0;
         left: 2.5%;
+        z-index: 99999;
     }
 
     .headerCol1{
@@ -653,7 +686,6 @@ a:visited { text-decoration: none; }
     .headerCol2{
         float: left;
         width: 66.666%;
-        
     }
 
     .social{
@@ -694,18 +726,60 @@ a:visited { text-decoration: none; }
         margin: 50vh 0 0 33.333%;
     }
 
+    .workLink{
+    
+    }
+
     .workItem{
         padding: 0;
         margin: 0 0 20vh 0;
+        transition: all 0.25s;
+        position: relative;
     }
+    
+    .workItem:hover .workImage {
+        opacity: 0.6;
+        filter: blur(5px);
+        transition: all 0.25s;
+    }
+
+    .workItem:hover .workHoverText {
+        filter: blur(0px);
+        opacity: 1;
+    }
+
 
     .workImage{
         margin: 0 0 12px 0;
         padding: 0;
         width: 100%;
+        transition: all 0.25s;
+        z-index: -2;
     }
 
+    .workHover{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
 
+    .workHoverText{
+        font-size: 10vw;
+        margin: auto;
+        color: #ffffff;
+        line-height: 100%;
+        transition: all 0.25s;
+        filter: blur(10px);
+        z-index: 2;
+        opacity: 0;
+        color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 1px white;
+            font-weight: 900;
+    }
+
+    
     .workDescription{
         color: #ffffff;
         text-decoration: none;
