@@ -12,7 +12,7 @@
 
 html{
     background: #121212; /* Old browsers */
-
+    scroll-behavior: smooth;
     cursor: crosshair;
     font-family: 'Inter UI';
     text-transform: uppercase;
