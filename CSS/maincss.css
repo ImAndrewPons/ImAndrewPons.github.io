@@ -200,7 +200,7 @@ a:visited { text-decoration: none; }
         }
     
     
-        .workContainer{
+        .container{
             padding: 0 0 0 0;
             width: 95%;
             margin: 0 auto;
@@ -323,7 +323,7 @@ a:visited { text-decoration: none; }
     }
 
 
-    .workContainer{
+    .container{
         padding: 0 0 0 0;
         width: 95%;
         margin: 0 auto;
@@ -449,7 +449,7 @@ a:visited { text-decoration: none; }
     }
 
 
-    .workContainer{
+    .container{
         padding: 0 0 0 0;
         width: 95%;
         margin: 0 auto;
@@ -508,6 +508,7 @@ a:visited { text-decoration: none; }
         width: 95%;
         top: 0;
         left: 2.5%;
+        z-index: 5;
     }
 
     .headerCol1{
@@ -571,7 +572,7 @@ a:visited { text-decoration: none; }
     .heroMobile{display: none;}
 
 
-    .workContainer{
+    .container{
         padding: 0 0 0 0;
         width: 95%;
         margin: 0 auto;
@@ -728,7 +729,7 @@ a:visited { text-decoration: none; }
     }
 
 
-    .workContainer{
+    .container{
         padding: 0 0 0 0;
         width: 95%;
         margin: 0 auto;
