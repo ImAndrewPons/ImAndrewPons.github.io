@@ -117,10 +117,12 @@ const params = {
   timingFunction: 'cubic-bezier(0.23, 1, 0.32, 1)'
 }
 
-new SmoothScroll('.workContainer', {
+new SmoothScroll('.container', {
   
       duration: 900,
       timingFunction: 'cubic-bezier(0.23, 1, 0.32, 1)'
   
   })
+
+  // SmoothScroll.js was made available by Victor Timsit. (https://github.com/vtimsit)
   
