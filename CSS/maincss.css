@@ -189,6 +189,7 @@ a:visited { text-decoration: none; }
             line-height: 100%;
             font-weight: 400;
             display: none;
+            z-index: 10;
         }
 
         .heroMobile{
@@ -312,6 +313,7 @@ a:visited { text-decoration: none; }
         line-height: 100%;
         font-weight: 400;
         display: none;
+        z-index: 10;
     }
 
     .heroMobile{
@@ -438,6 +440,7 @@ a:visited { text-decoration: none; }
         line-height: 100%;
         font-weight: 400;
         display: none;
+        z-index: 10;
     }
 
     .heroMobile{
@@ -567,6 +570,7 @@ a:visited { text-decoration: none; }
         left: 2.5vw;
         color: #ffffff;
         display: block;
+        z-index: 10;
     }
 
     .heroMobile{display: none;}
@@ -726,6 +730,7 @@ a:visited { text-decoration: none; }
         position: fixed;
         top: 50vh;
         left: 2.5vw;
+        z-index: 10;
     }
 
 
