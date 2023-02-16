@@ -10,6 +10,8 @@
     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Ccircle cx='4' cy='4' r='4' fill='black'/%3E%3C/svg%3E"), auto;
 }
 
+
+  
 ::-moz-selection { background: var(--black); color: var(--white)}
 ::selection { background: var(--black); color: var(--white);}
 
@@ -17,13 +19,19 @@
     font-family: 'Basier Circle';
     font-style:  normal;
     font-weight: 400;
-    src: url("/Assets/Fonts/BasierCircle-Regular.otf") format("otf"),
+    src: url("/Assets/Fonts/basiercircle-regular-webfont.eot") format("eot"),
+    src: url("/Assets/Fonts/basiercircle-regular-webfont.ttf") format("ttf"),
+    src: url("/Assets/Fonts/basiercircle-regular-webfont.woff") format("woff"),
+    src: url("/Assets/Fonts/basiercircle-regular-webfont.woff2") format("woff2"),
   }
   @font-face {
     font-family: 'Basier Circle Mono';
     font-style:  normal;
     font-weight: 400;
-    src: url("/Assets/Fonts/BasierCircleMono-Regular.otf") format("otf"),
+    src: url("/Assets/Fonts/basiercirclemono-regular-webfont.eot") format("eot"),
+    src: url("/Assets/Fonts/basiercirclemono-regular-webfont.ttf") format("ttf"),
+    src: url("/Assets/Fonts/basiercirclemono-regular-webfont.woff") format("woff"),
+    src: url("/Assets/Fonts/basiercirclemono-regular-webfont.woff2") format("woff2"),
   }
 
 html{
@@ -43,7 +51,7 @@ html{
     border-radius: 50%;
     background-color: none;
     border: 1px solid var(--black);
-    transition: all 0.75s cubic-bezier(0,.62,.38,1);
+    transition: all 0.5s cubic-bezier(0,.62,.38,1);
     transform-origin: '50% 50%';
     background-size: cover;
     overflow: visible;
@@ -93,6 +101,12 @@ h1{
 
 /* Small devices (phones) */
 @media only screen and (min-width: 0px) {
+
+    #element{
+        display:none;
+    }
+
+
     .flex-container{
         padding-top:32px;
     }
@@ -120,6 +134,16 @@ h1{
         text-transform: uppercase;
         margin: 24px 0 0 0;
     }
+
+    h3{
+        font-size: 24px;
+        letter-spacing: -0.02em;;
+        font-weight: 400;
+        line-height: 125%;
+        width: 80%;
+        margin: 96px 0;
+    }
+
     p{
         font-size: 14px;
         font-weight: 400;
@@ -150,10 +174,8 @@ h1{
     }
     
     .gridItem{
-        flex-basis: 100%;
+        flex-basis: calc(50% - 8px);
         margin: 0 0 32px 0;
-        position: relative;
-        
     }
 
     .workImage{
@@ -164,6 +186,11 @@ h1{
 
 /* Medium devices (tablets) */
 @media only screen and (min-width: 700px) {
+
+
+    #element{
+        display:none;
+    }
     .flex-container{
         padding-top:32px;
     }
@@ -192,6 +219,16 @@ h1{
         line-height: 80%;
         text-transform: uppercase;
     }
+
+    h3{
+        font-size: 32px;
+        letter-spacing: -0.02em;;
+        font-weight: 400;
+        line-height: 125%;
+        width: 60%;
+        margin: 128px 0;
+    }
+
     p{
         font-size: 14px;
         font-weight: 400;
@@ -224,7 +261,8 @@ h1{
     }
     
     .gridItem{
-        flex-basis: calc(50% - 8px);
+        flex-basis: calc(25% - 8px);
+        margin: 0 0 48px 0;
     }
 }
 
@@ -232,6 +270,9 @@ h1{
 /* Standard devices (laptop, above 1200px) */
 @media only screen and (min-width: 1200px) {
 
+    #element{
+        display:block;
+    }
 
 .line2{
     display: flex;
@@ -258,6 +299,16 @@ h2{
     line-height: 80%;
     text-transform: uppercase;
 }
+
+h3{
+    font-size: 32px;
+    letter-spacing: -0.02em;;
+    font-weight: 400;
+    line-height: 125%;
+    width: 60%;
+    margin: 128px 0;
+}
+
 p{
     font-size: 16px;
     font-weight: 400;
@@ -289,7 +340,7 @@ p{
 }
 
 .gridItem{
-    flex-basis: calc(50% - 8px);
+    flex-basis: calc(20% - 8px);
 }
 
 }

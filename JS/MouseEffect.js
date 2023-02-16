@@ -1,5 +1,5 @@
 const cursor = document.querySelector("#element");
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".gridItem img");
 let mouseX = 0;
 let mouseY = 0;
 let x = 0;
@@ -7,8 +7,8 @@ let y = 0;
 
 
 document.addEventListener("mousemove", (e) => {
-  mouseX = e.clientX-10;
-  mouseY = e.clientY - 10 + window.pageYOffset; // add the scroll offset
+  mouseX = e.clientX-9;
+  mouseY = e.clientY - 9.5 + window.pageYOffset; // add the scroll offset
 });
 
 document.addEventListener("mouseout", () => {
