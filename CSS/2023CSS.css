@@ -19,8 +19,8 @@
     font-family: 'Basier Circle';
     font-style:  normal;
     font-weight: 400;
-    src: url("/Assets/Fonts/basiercircle-regular-webfont.eot") format("eot"),
-    src: url("/Assets/Fonts/basiercircle-regular-webfont.ttf") format("ttf"),
+    
+    src: url("/Assets/Fonts/basiercircle-regular-webfont.ttf") format("truetype"),
     src: url("/Assets/Fonts/basiercircle-regular-webfont.woff") format("woff"),
     src: url("/Assets/Fonts/basiercircle-regular-webfont.woff2") format("woff2"),
   }
@@ -28,8 +28,8 @@
     font-family: 'Basier Circle Mono';
     font-style:  normal;
     font-weight: 400;
-    src: url("/Assets/Fonts/basiercirclemono-regular-webfont.eot") format("eot"),
-    src: url("/Assets/Fonts/basiercirclemono-regular-webfont.ttf") format("ttf"),
+  
+    src: url("/Assets/Fonts/basiercirclemono-regular-webfont.ttf") format("truetype"),
     src: url("/Assets/Fonts/basiercirclemono-regular-webfont.woff") format("woff"),
     src: url("/Assets/Fonts/basiercirclemono-regular-webfont.woff2") format("woff2"),
   }
