@@ -1,3 +1,4 @@
+if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 const cursor = document.querySelector("#element");
 const buttons = document.querySelectorAll(".gridItem img");
 const icons = document.querySelectorAll("#icon");
@@ -51,6 +52,7 @@ function animate() {
 }
 
 animate();
+}
 
 
 

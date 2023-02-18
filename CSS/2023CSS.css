@@ -65,7 +65,7 @@ body.dark-mode{
     display: flex;
     flex-direction: column;
     width: 92vw;
-    margin: 64px auto;
+    margin: 0px auto;
 }
 
 
@@ -126,7 +126,7 @@ h1{
 
 
     .flex-container{
-        padding-top:32px;
+        padding-top:96px;
     }
 
     .line1{
@@ -248,7 +248,7 @@ h1{
         display:none;
     }
     .flex-container{
-        padding-top:32px;
+        padding-top:96px;
     }
 
     button{
