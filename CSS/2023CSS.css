@@ -18,17 +18,17 @@
     font-family: 'Basier Circle';
     font-style:  normal;
     font-weight: 400;
-    src: url('./Assets/basiercircle-regular-webfont.ttf') format('truetype'),
-         url('./Assets/basiercircle-regular-webfont.woff') format('woff'),
-         url('./Assets/basiercircle-regular-webfont.woff2') format('woff2'),
+    src: url('/Assets/basiercircle-regular-webfont.ttf') format('truetype'),
+         url('/Assets/basiercircle-regular-webfont.woff') format('woff'),
+         url('/Assets/basiercircle-regular-webfont.woff2') format('woff2'),
   }
   @font-face {
     font-family: 'Basier Circle Mono';
     font-style:  normal;
     font-weight: 400;
-    src: url('./Assets/basiercirclemono-regular-webfont.ttf') format('truetype'),
-         url('./Assets/basiercirclemono-regular-webfont.woff') format('woff'),
-         url('./Assets/basiercirclemono-regular-webfont.woff2') format('woff2'),
+    src: url('/Assets/basiercirclemono-regular-webfont.ttf') format('truetype'),
+         url('/Assets/basiercirclemono-regular-webfont.woff') format('woff'),
+         url('/Assets/basiercirclemono-regular-webfont.woff2') format('woff2'),
   }
 
 body{
