@@ -7,7 +7,6 @@
 *{
     margin: 0;
     padding: 0;
-    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Ccircle cx='4' cy='4' r='4' fill='black'/%3E%3C/svg%3E"), auto;
 }
 
 
@@ -20,26 +19,30 @@
     font-style:  normal;
     font-weight: 400;
     
-    src: url("/Assets/Fonts/basiercircle-regular-webfont.ttf") format("truetype"),
-    src: url("/Assets/Fonts/basiercircle-regular-webfont.woff") format("woff"),
-    src: url("/Assets/Fonts/basiercircle-regular-webfont.woff2") format("woff2"),
+    src: url('/Assets/Fonts/basiercircle-regular-webfont.ttf') format('truetype'),
+    src: url('/Assets/Fonts/basiercircle-regular-webfont.woff') format('woff'),
+    src: url('/Assets/Fonts/basiercircle-regular-webfont.woff2') format('woff2'),
   }
   @font-face {
     font-family: 'Basier Circle Mono';
     font-style:  normal;
     font-weight: 400;
   
-    src: url("/Assets/Fonts/basiercirclemono-regular-webfont.ttf") format("truetype"),
-    src: url("/Assets/Fonts/basiercirclemono-regular-webfont.woff") format("woff"),
-    src: url("/Assets/Fonts/basiercirclemono-regular-webfont.woff2") format("woff2"),
+    src: url('/Assets/Fonts/basiercirclemono-regular-webfont.ttf') format('truetype'),
+    src: url('/Assets/Fonts/basiercirclemono-regular-webfont.woff') format('woff'),
+    src: url('/Assets/Fonts/basiercirclemono-regular-webfont.woff2') format('woff2'),
   }
 
-html{
-    font-family: 'Basier Circle';
+body{
+    font-family: 'Basier Circle', sans-serif;
     color: var(--black);
     background-color: var(--white);
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Ccircle cx='4' cy='4' r='4' fill='black'/%3E%3C/svg%3E"), auto;
+}
 
-
+body.dark-mode{
+    font-family: 'Basier Circle', sans-serif;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Ccircle cx='4' cy='4' r='4' fill='white'/%3E%3C/svg%3E"), auto;
 }
 
 #element {
@@ -58,10 +61,6 @@ html{
 
 }
 
-#element svg{
-    width: 100%;
-    height: 100%;
-}
 
 
 .flex-container{
@@ -81,7 +80,7 @@ h1{
 
 
 #time{
-    font-family: 'Basier Circle Mono';
+    font-family: 'Basier Circle Mono', monospace;
 }
 
 .workTitle{
@@ -90,10 +89,31 @@ h1{
     font-size: 12px;
 }
 
+
 .video{
     position:absolute; top:0; left:0; width:100%;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--white);
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 92vw;
+    max-height: 92vh;
+  }
 
 
 
@@ -110,6 +130,43 @@ h1{
     .flex-container{
         padding-top:32px;
     }
+
+    .line1{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+     button{
+            height: 16px;
+            width: 16px;
+            margin-top: 4px;
+            border: 0;
+            cursor: none;
+        }
+
+        button:hover{
+            opacity: 0.6;
+        }
+
+    button.light-mode{
+        background-image: url(/Assets/Images/icon-light.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    button.dark-mode{
+        background-image: url(/Assets/Images/icon-dark.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--white);
+    }
+
+
+
+
     .line2{
         display: flex;
         flex-direction: column;
@@ -194,6 +251,12 @@ h1{
     .flex-container{
         padding-top:32px;
     }
+
+    button{
+        margin-top: 8px;
+    }
+
+
     .line2{
         display: flex;
         flex-direction: row;
@@ -272,6 +335,10 @@ h1{
 
     #element{
         display:block;
+    }
+
+    button{
+        margin-top: 12px;
     }
 
 .line2{

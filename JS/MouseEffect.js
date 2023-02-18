@@ -1,5 +1,6 @@
 const cursor = document.querySelector("#element");
 const buttons = document.querySelectorAll(".gridItem img");
+const icons = document.querySelectorAll("#icon");
 let mouseX = 0;
 let mouseY = 0;
 let x = 0;
@@ -23,9 +24,18 @@ document.addEventListener("mouseover", () => {
 
 buttons.forEach((button) => {
   button.addEventListener("mouseenter", () => {
-    cursor.style.transform = "scale(0)";
+    cursor.style.transform = "scale(1.5)";
   });
   button.addEventListener("mouseleave", () => {
+    cursor.style.transform = "scale(1)";
+  });
+});
+
+icons.forEach((icon) => {
+  icon.addEventListener("mouseenter", () => {
+    cursor.style.transform = "scale(0)";
+  });
+  icon.addEventListener("mouseleave", () => {
     cursor.style.transform = "scale(1)";
   });
 });
@@ -43,6 +53,8 @@ function animate() {
 animate();
 
 
+
+//TIME DISPLAY
 
 // Define a function to display the current time in a given city
 function showCityTime() {
@@ -69,6 +81,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
+
+
+//FACE HOVER BUBBLE
 
 
 // Get the element that will display the background image
@@ -98,3 +113,61 @@ for (let i = 0; i < h1Tags.length; i++) {
 
 
 
+
+
+// MODAL
+
+// Get the modal element
+const modal = document.createElement('div');
+modal.classList.add('modal');
+document.body.appendChild(modal);
+
+// Get all images with class "workImage"
+const images = document.querySelectorAll('.workImage');
+
+// Add click event listener to each image
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    // Show the modal
+    modal.style.display = 'block';
+    // Set the clicked image as the modal content
+    modal.innerHTML = `<img class="modal-content" src="${image.src}" alt="${image.alt}">`;
+    // Disable scrolling
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+// Add click event listener to the modal to close it
+modal.addEventListener('click', () => {
+  modal.style.display = 'none';
+  // Enable scrolling
+  document.body.style.overflow = 'auto';
+});
+
+
+//THEME SWITCH
+
+const themeToggle = document.getElementById('icon');
+
+// Add an event listener for the button click event
+themeToggle.addEventListener('click', () => {
+  // Get the body element
+  const body = document.body;
+
+  // Toggle the dark-mode class on the body element
+  body.classList.toggle('dark-mode');
+
+    // Swap the --white and --black variables
+    const root = document.documentElement;
+    const white = getComputedStyle(root).getPropertyValue('--white');
+    const black = getComputedStyle(root).getPropertyValue('--black');
+    root.style.setProperty('--white', black);
+    root.style.setProperty('--black', white);
+
+  // Get the button element
+  const button = document.getElementById('icon');
+
+  // Toggle the light-mode and dark-mode classes on the button element
+  button.classList.toggle('light-mode');
+  button.classList.toggle('dark-mode');
+});
