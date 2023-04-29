@@ -198,11 +198,11 @@ h1{
       }
 
     h3{
-        font-size: 20px;
+        font-size: 18px;
         letter-spacing: -0.02em;;
         font-weight: 400;
         line-height: 125%;
-        width: 80%;
+        width: 100%;
         margin: 96px 0;
     }
 
@@ -297,7 +297,7 @@ h1{
         letter-spacing: -0.02em;;
         font-weight: 400;
         line-height: 125%;
-        width: 60%;
+        width: 96%;
         margin: 128px 0;
     }
 
