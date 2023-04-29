@@ -117,6 +117,8 @@ h1{
 
 
 
+
+
 /* Small devices (phones) */
 @media only screen and (min-width: 0px) {
 
@@ -190,6 +192,10 @@ h1{
         text-transform: uppercase;
         margin: 24px 0 0 0;
     }
+
+    #art{
+        margin-left:3px;
+      }
 
     h3{
         font-size: 20px;
@@ -282,6 +288,10 @@ h1{
         text-transform: uppercase;
     }
 
+    #art{
+        margin-left:3px;
+      }
+
     h3{
         font-size: 24px;
         letter-spacing: -0.02em;;
@@ -365,6 +375,10 @@ h2{
     line-height: 80%;
     text-transform: uppercase;
 }
+
+#art{
+    margin-left:6px;
+  }
 
 h3{
     font-size: 24px;
