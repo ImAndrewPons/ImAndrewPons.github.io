@@ -15,7 +15,7 @@
 ::selection { background: var(--black); color: var(--white);}
 
 @font-face {
-    font-family: 'Basier Circle';
+    font-family: 'BasierCircle Regular';
     font-style:  normal;
     font-weight: 400;
     src: url('/Assets/basiercircle-regular-webfont.ttf') format('truetype'),
@@ -23,7 +23,7 @@
          url('/Assets/basiercircle-regular-webfont.woff2') format('woff2'),
   }
   @font-face {
-    font-family: 'Basier Circle Mono';
+    font-family: 'BasierCircleMono Regular';
     font-style:  normal;
     font-weight: 400;
     src: url('/Assets/basiercirclemono-regular-webfont.ttf') format('truetype'),
@@ -32,14 +32,14 @@
   }
 
 body{
-    font-family: 'Basier Circle', sans-serif;
+    font-family: 'BasierCircle Regular', sans-serif;
     color: var(--black);
     background-color: var(--white);
     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Ccircle cx='4' cy='4' r='4' fill='black'/%3E%3C/svg%3E"), auto;
 }
 
 body.dark-mode{
-    font-family: 'Basier Circle', sans-serif;
+    font-family: 'BasierCircle Regular', sans-serif;
     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Ccircle cx='4' cy='4' r='4' fill='white'/%3E%3C/svg%3E"), auto;
 }
 
@@ -78,7 +78,7 @@ h1{
 
 
 #time{
-    font-family: 'Basier Circle Mono', monospace;
+    font-family: 'BasierCircleMono Regular', monospace;
 }
 
 .workTitle{
@@ -192,7 +192,7 @@ h1{
     }
 
     h3{
-        font-size: 24px;
+        font-size: 20px;
         letter-spacing: -0.02em;;
         font-weight: 400;
         line-height: 125%;
@@ -283,7 +283,7 @@ h1{
     }
 
     h3{
-        font-size: 32px;
+        font-size: 24px;
         letter-spacing: -0.02em;;
         font-weight: 400;
         line-height: 125%;
@@ -367,7 +367,7 @@ h2{
 }
 
 h3{
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: -0.02em;;
     font-weight: 400;
     line-height: 125%;
